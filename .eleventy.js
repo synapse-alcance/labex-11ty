@@ -4,6 +4,9 @@ module.exports = (config) => {
     const path = page.url || "/";
     return site + path;
   });
+  config.addPassthroughCopy({
+    "src/static/css" : "/css"
+  });
 	return {
 		dir: {
 			input: "src",
