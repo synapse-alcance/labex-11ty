@@ -30,7 +30,7 @@ a {
 
 a:hover,
 a:focus-visible {
-  color: #2a3a50; /* slightly darker than primary */
+  color: var(--color-primary--muted);
 }
 
 p {
@@ -73,8 +73,6 @@ h4 {
   border: 0;
 }
 
-
-/* Layout container */
 .container {
   width: 100%;
   max-width: var(--container-max-width);
