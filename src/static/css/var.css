@@ -93,6 +93,8 @@
   --transition-base: var(--duration-normal) var(--ease-in-out);
   --transition-fast: var(--duration-fast) var(--ease-out);
   --transition-slow: var(--duration-slow) var(--ease-soft);
+
+  --viewport-min-width-desktop: 768px;
 }
 
 
