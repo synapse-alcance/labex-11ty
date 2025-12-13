@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: calc(100vh - var(--header-height-mobile));
+  height: calc(100vh - var(--header-height-mobile) * 1.05);
   overflow: hidden;
   display: flex;
   align-items: center;
