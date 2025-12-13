@@ -44,8 +44,8 @@
   --radius-lg: 12px;
   --radius-inf: 999px; /* pills/circles */
 
-  --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.08);
-  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 6px 18px rgba(0, 0, 0, 0.24);
 
   /* Transitions */
   --transition-fast: 0.15s ease-out;
