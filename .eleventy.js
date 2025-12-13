@@ -5,7 +5,9 @@ module.exports = (config) => {
     return site + path;
   });
   config.addPassthroughCopy({
-    "src/static/css" : "/css"
+    "src/static/css" : "/css",
+    "src/static/img" : "/img",
+    "src/static/js" : "/js"
   });
 	return {
 		dir: {

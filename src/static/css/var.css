@@ -1,8 +1,8 @@
 :root {
   --color-primary: rgb(53, 74, 103);
-  --color-primary--muted: rgba(72, 101, 141, 0.6);
+  --color-primary--muted: rgba(72, 101, 141, 0.3);
   --color-secondary: rgb(80, 103, 145);
-  --color-secondary-muted: rgba(122, 157, 221, 0.6);
+  --color-secondary-muted: rgba(122, 157, 221, 0.3);
   --color-accent: rgb(201, 165, 97);
   --color-primary-contrast: rgb(255, 255, 255);
 

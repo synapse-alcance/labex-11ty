@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header-content">
+
+    <div class="header-logo">
+      <img src="/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
+    </div>
+
+    <button class="header-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Menu</span>
+      ☰
+    </button>
+
+    <nav class="header-nav">
+      <ul>
+        {% for item in header.menu %}
+        <li class="header-nav-link">
+          <a href="{{ item.path }}" target="_self">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="header-backdrop"></div>

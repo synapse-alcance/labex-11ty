@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "label": "Home",
+      "path": "#"
+    },
+    {
+      "label": "Sobre",
+      "path": "#"
+    },
+    {
+      "label": "Equipe",
+      "path": "#"
+    },
+    {
+      "label": "Exames",
+      "path": "#"
+    },
+    {
+      "label": "Convênios",
+      "path": "#"
+    },
+    {
+      "label": "Agendamento",
+      "path": "#"
+    }
+  ]
+}
