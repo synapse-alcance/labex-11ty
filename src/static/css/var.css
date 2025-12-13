@@ -55,7 +55,43 @@
   --container-max-width: 1120px;
   --header-height-mobile: 64px;
   --header-height-desktop: 80px;
+
+  /* Easing curves */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Smooth UI-friendly easings */
+  --ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-snappy: cubic-bezier(0.15, 1.1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Transition durations */
+  --duration-fast: 240ms;
+  --duration-normal: 320ms;
+  --duration-slow: 480ms;
+
+  /* Transform utilities */
+  --scale-sm: 0.95;
+  --scale-md: 0.98;
+  --scale-lg: 1.05;
+
+  --rotate-sm: 3deg;
+  --rotate-md: 6deg;
+  --rotate-lg: 12deg;
+
+  --translate-sm: 4px;
+  --translate-md: 8px;
+  --translate-lg: 16px;
+
+  /* Transition shortcuts*/
+  --transition-base: var(--duration-normal) var(--ease-in-out);
+  --transition-fast: var(--duration-fast) var(--ease-out);
+  --transition-slow: var(--duration-slow) var(--ease-soft);
 }
+
+
 
 /* @media (min-width: 768px) {
   :root {
