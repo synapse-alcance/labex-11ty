@@ -1,0 +1,24 @@
+---
+title: Labex | Home
+permalink: "/"
+cssSheets: ["home", "buttons"]
+---
+{% extends "layouts/base.njk" %}
+{% block content %}
+
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/vid/labex-intro-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Tecnologia avançada, cuidado que acolhe</h1>
+      <p>Equipamentos de última geração e uma equipe preparada para receber você.</p>
+      <a href="{{ site.info.waUrl }}" class="btn btn-primary">Agendar</a>
+    </div>
+
+  </section>
+
+{% endblock %}
