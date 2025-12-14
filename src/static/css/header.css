@@ -1,6 +1,9 @@
 .header {
+  position: fixed;
+  width: 100vw;
   background: var(--color-primary);
   box-shadow: var(--shadow-medium);
+  z-index: 1000;
 }
 
 .header-content {
@@ -43,7 +46,7 @@
   transform: translateX(-110%);
   transition: transform var(--transition-base);
   padding: var(--spacing-lg);
-  z-index: 1000;
+  z-index: 100;
 }
 
 .header-nav.open {
@@ -80,7 +83,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-base);
-  z-index: 900;
+  z-index: 90;
 }
 
 .header-backdrop.open {
