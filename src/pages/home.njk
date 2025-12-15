@@ -2,6 +2,7 @@
 title: Labex | Home
 permalink: "/"
 cssSheets: ["home", "buttons", "sections", "cards"]
+jsScripts: ["home"]
 ---
 {% extends "layouts/base.njk" %}
 {% block content %}
@@ -88,9 +89,9 @@ cssSheets: ["home", "buttons", "sections", "cards"]
         {% endfor %}
         <div class="differentiators-cards">
           {% for card in differentiators.cards %}
-          <div class="card">
+          <div class="card fade-up">
             <div class="differentiators-card-top">
-              <div class="differentiators-card-icon">
+              <div class="differentiators-card-icon pop">
                 <img src="{{ card.imgSrc }}" alt="{{ card.imgAlt }}">
               </div>
               <div class="differentiators-card-title">
