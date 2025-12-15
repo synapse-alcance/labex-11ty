@@ -6,6 +6,7 @@ module.exports = (config) => {
   });
   config.addPassthroughCopy({
     "src/static/css" : "/css",
+    "src/static/icon" : "/icon",
     "src/static/img" : "/img",
     "src/static/js" : "/js",
     "src/static/vid" : "/vid"
