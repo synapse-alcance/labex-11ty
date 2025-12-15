@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="/css/{{ sheet }}.css">
 		{% endfor %}
 		<script src="/js/header.js" defer></script>
+		{% for script in jsScripts %}
+		<script src="/js/{{ script }}.js" defer></script>
+		{% endfor %}
     <link rel="canonical" href="{{ page | canonicalize }}">
 	</head>
 	<body>
