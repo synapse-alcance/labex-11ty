@@ -64,7 +64,7 @@
   background-image:
     linear-gradient(rgba(255 255 255 / 0.9), rgba(255 255 255 / 0.9)),
     url("/img/bg1.webp");
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -75,4 +75,51 @@
   margin-bottom: var(--spacing-md);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius-md);
+}
+
+.plans {
+  background-image:
+    linear-gradient(rgba(92 128 179 / 0.1), rgba(92 128 179 / 0.25)),
+    linear-gradient(rgba(255 255 255 / 0.5), rgba(255 255 255 / 0.5)),
+    url("/img/bg2.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.plans-slider {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.plans-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.plans-slide {
+  height: 40px;
+  margin-right: 40px;
+}
+
+.plans-slide img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.plans-cta {
+  width: max-content;
+  margin: auto;
 }

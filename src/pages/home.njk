@@ -41,4 +41,37 @@ cssSheets: ["home", "buttons", "sections"]
     </div>
   </section>
 
+  <section class="section plans">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ plans.title }}</h1>
+      </div>
+      <div class="section-content">
+        {% for paragraph in plans.intro %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+        <div class="plans-slider">
+          <div class="plans-track">
+            {% for company in plans.companies %}
+            <div class="plans-slide">
+              <img src="{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
+            </div>
+            {% endfor %}
+            {% for company in plans.companies %}
+            <div class="plans-slide">
+              <img src="{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% for paragraph in plans.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      <div class="plans-cta">
+        <a class="btn btn-primary" href="{{ plans.ctaPath }}">{{ plans.ctaText }}</a>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}

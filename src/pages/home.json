@@ -63,7 +63,40 @@
         "Holter",
         "M.A.P.A."
       ]
-    }
-  ]
+    }]
+  },
+
+  "plans": {
+    "title": "Convênios",
+    "intro": [
+      "Na Labex acreditamos que cuidar da saúde deve ser simples, acessível e sem burocracias, por isso atendemos os principais planos de saúde para facilitar seu acesso aos exames."
+    ],
+    "companies": [
+      {
+        "imgSrc": "/img/logo-amil.webp",
+        "imgAlt": "Amil"
+      },
+      {
+        "imgSrc": "/img/logo-bradesco.webp",
+        "imgAlt": "Bradesco Saúde"
+      },
+      {
+        "imgSrc": "/img/logo-petrobras.webp",
+        "imgAlt": "Saúde PETROBRAS"
+      },
+      {
+        "imgSrc": "/img/logo-sulamerica.webp",
+        "imgAlt": "Sulamérica Saúde"
+      },
+      {
+        "imgSrc": "/img/logo-unimed.webp",
+        "imgAlt": "Unimed"
+      }
+    ],
+    "text": [
+      "Para que você possa conferir todos os planos aceitos, disponibilizamos uma página completa com a lista atualizada de convênios. Assim, você encontra rapidamente o que precisa e segue direto para o agendamento do seu exame."
+    ],
+  "ctaText": "Todos os convênios",
+  "ctaPath": "#"
   }
 }
