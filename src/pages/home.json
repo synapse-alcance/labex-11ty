@@ -100,5 +100,44 @@
     ],
   "ctaText": "Todos os convênios",
   "ctaPath": "#"
+  },
+
+  "differentiators": {
+    "title": "Destaques",
+    "intro": [
+      "Excelência, acolhimento e tecnologia em cada etapa do seu exame."
+    ],
+    "cards": [
+      {
+        "imgSrc": "/icon/microchip-solid-full.svg",
+        "imgAlt": "Ícone de chip de computador.",
+        "title": "Tecnologia de ponta",
+        "text": "Equipamentos modernos e recursos avançados de imagem garantem diagnósticos mais precisos, rápidos e confortáveis. A tecnologia trabalha a favor do paciente em cada etapa do exame."
+      },
+      {
+        "imgSrc": "/icon/stethoscope-solid-full.svg",
+        "imgAlt": "Ícone de estetoscópio.",
+        "title": "Equipe especializada",
+        "text": "Profissionais experientes e em constante atualização oferecem segurança técnica e orientação clara, tornando o processo mais tranquilo e confiável para cada paciente."
+      },
+      {
+        "imgSrc": "/icon/hand-holding-heart-solid-full.svg",
+        "imgAlt": "Ícone de mão apoiando coração.",
+        "title": "Atendimento humanizado",
+        "text": "Da recepção à entrega dos resultados, cada pessoa é acolhida com atenção, empatia e respeito. A experiência é pensada para reduzir ansiedade e transmitir tranquilidade."
+      },
+      {
+        "imgSrc": "/icon/house-user-solid-full.svg",
+        "imgAlt": "Ícone de pessoa dentro de casa.",
+        "title": "Ambiente acolhedor",
+        "text": "A estrutura da clínica foi planejada para proporcionar bem-estar, com espaços amplos, climatizados e organizados, evitando a sensação de ambiente hospitalar frio."
+      },
+      {
+        "imgSrc": "/icon/check-double-solid-full.svg",
+        "imgAlt": "Ícone de marca de check dupla.",
+        "title": "Processos ágeis",
+        "text": "Agendamento facilitado, orientações claras e integração com convênios tornam o atendimento mais rápido e eficiente, reduzindo esperas e burocracias."
+      }
+    ]
   }
 }

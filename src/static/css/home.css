@@ -118,3 +118,36 @@
     transform: translateX(-50%);
   }
 }
+
+.differentiators-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: var(--gap-md);
+}
+
+.differentiators-card-icon {
+  flex-basis: 36px;
+}
+
+.differentiators-card-icon img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.differentiators-card-title {
+  display: flex;
+  align-items: center;
+}
+
+.differentiators-card-title h3 {
+  margin: 0;
+}
+
+.differentiators-card-bottom {
+  margin-left: calc(36px + var(--gap-md));
+}
+
+.differentiators-card-bottom p {
+    line-height: var(--line-height-sparse);
+}
