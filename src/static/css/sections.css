@@ -41,6 +41,7 @@
 
 .section-content {
   margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .section-content h2,
