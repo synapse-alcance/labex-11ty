@@ -1,0 +1,34 @@
+.card {
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-4);
+}
+
+.card + .card {
+  margin-top: var(--space-4);
+}
+
+.card-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.card-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Grid for larger screens */
+@media (min-width: 768px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+}

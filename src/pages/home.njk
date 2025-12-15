@@ -1,7 +1,7 @@
 ---
 title: Labex | Home
 permalink: "/"
-cssSheets: ["home", "buttons"]
+cssSheets: ["home", "buttons", "sections"]
 ---
 {% extends "layouts/base.njk" %}
 {% block content %}
@@ -10,15 +10,35 @@ cssSheets: ["home", "buttons"]
     <video class="hero-video" autoplay muted loop playsinline>
       <source src="/vid/labex-intro-video.mp4" type="video/mp4">
     </video>
-
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
       <h1>Tecnologia avançada, cuidado que acolhe</h1>
       <p>Equipamentos de última geração e uma equipe preparada para receber você.</p>
       <a href="{{ site.info.waUrl }}" class="btn btn-primary">Agendar</a>
     </div>
+  </section>
 
+  <section class="section examinations">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ examinations.title }}</h1>
+      </div>
+      {% for subsection in examinations.subsections %}
+      <div class="section-content">
+        <h2>{{ subsection.title }}</h2>
+        {% for paragraph in subsection.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+        <img src="{{ subsection.imgSrc }}" alt="{{ subsection.imgAlt }}">
+        <h3>Exames disponíveis:</h3>
+        <ul>
+          {% for item in subsection.list %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
   </section>
 
 {% endblock %}

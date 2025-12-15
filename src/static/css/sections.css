@@ -10,7 +10,7 @@
 }
 
 .section-header {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
   text-align: left;
 }
 
@@ -37,6 +37,10 @@
   transform: translateY(4px);
   border-radius: 2px;
   box-shadow: var(--shadow-heading);
+}
+
+.section-content {
+  margin-top: var(--spacing-xl);
 }
 
 .section-content h2,

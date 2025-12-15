@@ -59,3 +59,20 @@
   font-weight: 300;
   margin-bottom: var(--spacing-xl);
 }
+
+.examinations {
+  background-image:
+    linear-gradient(rgba(255 255 255 / 0.9), rgba(255 255 255 / 0.9)),
+    url("/img/bg1.webp");
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.examinations img {
+  display: block;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-md);
+}

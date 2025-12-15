@@ -1,0 +1,69 @@
+{
+  "examinations": {
+    "title": "Exames",
+    "subsections": [{
+      "title": "Ressonâncias magnéticas",
+      "imgSrc": "/img/ressonancia-magnetica.webp",
+      "imgAlt": "Equipamento Magneton Altea da linha Siemens Healthineers em utilização.",
+      "text": [
+        "A ressonância magnética é um dos pilares da Labex, realizada com equipamentos de alto campo e recursos avançados de inteligência artificial que elevam a precisão diagnóstica. Aqui, o foco é oferecer imagens de altíssima definição com máximo conforto ao paciente, incluindo protocolos especializados para endometriose, estudos cardíacos, avaliação hepática e exames de corpo inteiro. Cada exame é conduzido por uma equipe experiente, preparada para acolher o paciente e explicar cada etapa."
+      ],
+      "list": [
+        "Ressonância de alto campo com Inteligência Artificial",
+        "Ressonância com preparo intestinal para endometriose",
+        "Ressonância de corpo inteiro",
+        "Ressonância com contraste hepatócito-específico",
+        "Ressonância com quantificação de ferro e gordura hepática",
+        "Ressonância de crânio com tractografia/espectroscopia",
+        "Ressonância cardíaca",
+        "Enterorressonância"
+      ]
+    },
+    {
+      "title": "Tomografias computadorizadas",
+      "imgSrc": "/img/tomografia-computadorizada.webp",
+      "imgAlt": "Extrato de um resultado de tomografia com diversos cortes transversais do abdômen do paciente.",
+      "text": [
+        "A Labex conta com tecnologia multislice de 128 canais, capaz de produzir imagens rápidas, detalhadas e com menor exposição à radiação. Os protocolos incluem desde tomografias gerais até exames avançados, como angiotomografia de coronárias, score de cálcio e estudos de perfusão. O objetivo é proporcionar diagnósticos precisos em poucos minutos, com processos otimizados e atendimento humanizado."
+      ],
+      "list": [
+        "Tomografia multislice 128 canais",
+        "Angiotomografia de coronárias",
+        "Tomografia para score de cálcio",
+        "Tomografia com perfusão"
+      ]
+    },
+    {
+      "title": "Ultrassonografias",
+      "imgSrc": "/img/ultrassonografia-3d.webp",
+      "imgAlt": "Foto de topo de uma mulher grávia apoiando a imagem de ultrassom 3D do seu feto em cima da barriga.",
+      "text": [
+        "Os exames de ultrassom da Labex abrangem desde avaliações gerais até estudos obstétricos em 3D/4D, permitindo visualizar detalhes com clareza e emoção. A clínica também oferece exames vasculares com Doppler, essenciais para o acompanhamento da saúde circulatória. Com profissionais experientes e equipamentos modernos, o ultrassom se torna uma experiência acolhedora, segura e informativa."
+      ],
+      "list": [
+        "Ultrassonografia geral",
+        "Ultrassonografia obstétrica 3D/4D",
+        "Doppler vascular"
+      ]
+    },
+    {
+      "title": "Demais exames diagnósticos",
+      "imgSrc": "/img/mamografia.webp",
+      "imgAlt": "Médica realizando exame de tomografia com paciente apoiada no equipamento ao fundo.",
+      "text": [
+        "Além das ressonâncias, tomografias e ultrassonografias, a Labex oferece um conjunto completo de exames complementares que apoiam o diagnóstico e o acompanhamento clínico. Entre eles estão radiografia digital, mamografia, densitometria óssea, eletrocardiograma, ecocardiograma, teste ergométrico, Holter e M.A.P.A. Esses exames são realizados com precisão técnica e atenção ao bem-estar do paciente, reforçando o compromisso da clínica com um cuidado integral e acessível."
+      ],
+      "list": [
+        "Radiografia digital",
+        "Mamografia digital",
+        "Densitometria óssea",
+        "Ecocardiograma com doppler",
+        "Eletrocardiograma",
+        "Teste ergométrico",
+        "Holter",
+        "M.A.P.A."
+      ]
+    }
+  ]
+  }
+}
