@@ -5,7 +5,11 @@
       "path": "#"
     },
     {
-      "label": "Sobre",
+      "label": "Exames",
+      "path": "#"
+    },
+    {
+      "label": "Convênios",
       "path": "#"
     },
     {
@@ -13,11 +17,7 @@
       "path": "#"
     },
     {
-      "label": "Exames",
-      "path": "#"
-    },
-    {
-      "label": "Convênios",
+      "label": "Sobre",
       "path": "#"
     },
     {
