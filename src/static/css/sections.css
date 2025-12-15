@@ -44,6 +44,11 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.section-cta {
+  width: max-content;
+  margin: auto;
+}
+
 .section-content h2,
 .section-content h3,
 .section-content h4,

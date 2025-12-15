@@ -118,8 +118,3 @@
     transform: translateX(-50%);
   }
 }
-
-.plans-cta {
-  width: max-content;
-  margin: auto;
-}
