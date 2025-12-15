@@ -63,7 +63,9 @@
         "Holter",
         "M.A.P.A."
       ]
-    }]
+    }],
+  "ctaText": "Detalhes dos exames",
+  "ctaPath": "#"
   },
 
   "plans": {
