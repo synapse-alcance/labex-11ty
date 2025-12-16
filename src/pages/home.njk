@@ -108,4 +108,39 @@ jsScripts: ["home"]
     </div>
   </section>
 
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ testimonials.title }}</h1>
+      </div>
+      <div class="section-content">
+        {% for paragraph in testimonials.intro %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+        <div class="testimonials-quotes">
+          {% for quote in testimonials.quotes %}
+            <div class="testimonials-quote">
+              <div class="testimonials-quote-vignette">
+                <div class="testimonials-quote-left">
+                  <img src="icon/quote-left-solid-full.svg" alt="Ícone de aspas duplas à esquerda.">
+                </div>
+                <div class="testimonials-quote-text">
+                  {{ quote.text }}
+                  <img src="/icon/quote-right-solid-full.svg" alt="Ícone de aspas duplas à direita.">
+                </div>
+              </div>
+              <div class="testimonials-quote-authorship">
+                {{ quote.author }}
+                <span class="testimonials-quote-date">({{ quote.date }})</span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn-primary" href="{{ testimonials.ctaPath }}">{{ testimonials.ctaText }}</a>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}

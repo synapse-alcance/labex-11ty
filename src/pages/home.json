@@ -139,5 +139,37 @@
         "text": "Agendamento facilitado, orientações claras e integração com convênios tornam o atendimento mais rápido e eficiente, reduzindo esperas e burocracias."
       }
     ]
+  },
+
+  "testimonials": {
+    "title": "Depoimentos",
+    "intro": [
+      "Cada experiência vivida na Labex é única, e nada nos deixa mais felizes do que saber que conseguimos oferecer cuidado, acolhimento e tranquilidade em momentos importantes.",
+      "Reunimos aqui algumas palavras de quem já passou por nossos exames e compartilhou espontaneamente sua vivência conosco."
+    ],
+    "quotes": [
+      {
+        "text": "Atendimento ESPETACULAR, atencioso sempre […], super indicado a Labex.",
+        "author": "Márcio S.",
+        "date": "23/09/2025"
+      },
+      {
+        "text": "Muito obrigado! Pela seriedade, simpatia e respeito de toda a equipe do térreo.",
+        "author": "Antônio C.",
+        "date": "25/09/2025"
+      },
+      {
+        "text": "Equipe do térreo excelente. Agora sim posso dizer… atendimento de ponta. Só gratidão pela forma que recepcionaram minha família no exame realizado. Parabéns!!",
+        "author": "Lica B.",
+        "date": "25/09/2025"
+      },
+      {
+        "text": "Fiz dois procedimentos nessa clínica e gostei muito. Na recepção os meninos muito educados atenciosos. As técnicas que fazem o acesso da ressonância tratando com carinho (isso faz toda diferença), com uma palavra amiga e de conforto. A técnica de radiologia da mamografia muito humana, educada carinhosa. Em geral a clínica está de parabéns!",
+        "author": "Charlene J.",
+        "date": "30/09/2025"
+      }
+    ],
+  "ctaText": "Deixe seu depoimento",
+  "ctaPath": "https://g.page/r/CTfnFfa_yzd3EAE/review"
   }
 }
