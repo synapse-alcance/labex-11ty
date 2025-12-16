@@ -1,0 +1,110 @@
+:root {
+  --color-primary: rgb(53, 74, 103);
+  --color-primary--muted: rgba(72, 101, 141, 0.3);
+  --color-secondary: rgb(80, 103, 145);
+  --color-secondary-muted: rgba(122, 157, 221, 0.3);
+  --color-accent: rgb(201, 165, 97);
+  --color-primary-contrast: rgb(255, 255, 255);
+
+  --color-bg: rgb(250, 253, 255);
+  --color-bg-alt: rgb(230, 235, 239);
+  --color-backdrop: rgba(0,0,0,0.4);
+
+  --color-border: rgb(192, 192, 200);
+  
+  --color-text: rgb(34, 34, 34);
+  --color-text-muted: rgb(85, 85, 85);
+
+  --color-success: #2e7d32;
+  --color-warning: #ef6c00;
+  --color-danger:  #c62828;
+
+  /* Spacing and gaps */
+  --spacing-xxs: 0.25rem;  /* 4px  */
+  --spacing-xs: 0.5rem;   /* 8px  */
+  --spacing-sm: 0.75rem;  /* 12px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-xxl: 3rem;     /* 48px */
+
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+
+  /* Typography */
+  --font-family-base: Montserrat, Helvetica, Arial, sans-serif;
+  --font-family-alt: Oxanium, Tahoma, Geneva, Verdana, sans-serif;
+
+  --font-size-base: 16px;
+  --font-size-xs: 0.75rem;  /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem;     /* 16px */
+  --font-size-lg: 1.25rem;  /* 20px */
+  --font-size-xl: 1.5rem;   /* 24px */
+  --font-size-xxl: 2.5rem;    /* 32px */
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-sparse: 1.7;
+
+  /* Radii and shadows */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-inf: 999px; /* pills/circles */
+
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 6px 18px rgba(0, 0, 0, 0.24);
+  --shadow-heading: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.3s ease;
+
+  /* Layout */
+  --container-max-width: 1120px;
+  --header-height-mobile: 64px;
+  --header-height-desktop: 80px;
+
+  /* Easing curves */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Smooth UI-friendly easings */
+  --ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-snappy: cubic-bezier(0.15, 1.1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Transition durations */
+  --duration-fast: 240ms;
+  --duration-normal: 320ms;
+  --duration-slow: 480ms;
+
+  /* Transform utilities */
+  --scale-sm: 0.95;
+  --scale-md: 0.98;
+  --scale-lg: 1.05;
+
+  --rotate-sm: 3deg;
+  --rotate-md: 6deg;
+  --rotate-lg: 12deg;
+
+  --translate-sm: 4px;
+  --translate-md: 8px;
+  --translate-lg: 16px;
+
+  /* Transition shortcuts*/
+  --transition-base: var(--duration-normal) var(--ease-in-out);
+  --transition-fast: var(--duration-fast) var(--ease-out);
+  --transition-slow: var(--duration-slow) var(--ease-soft);
+
+  --viewport-min-width-desktop: 768px;
+}
+
+/* @media (min-width: 768px) {
+  :root {
+  }
+} */

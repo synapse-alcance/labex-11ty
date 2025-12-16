@@ -1,0 +1,123 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  background: var(--color-primary);
+  box-shadow: var(--shadow-medium);
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height-mobile);
+  padding: var(--spacing-md);
+}
+
+.header-logo {
+  height: calc(var(--header-height-mobile) * 0.6);
+  width: auto;
+}
+
+.header-logo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.header-toggle {
+  color: var(--color-primary-contrast);
+  font-size: var(--font-size-xl);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 75%;
+  max-width: 300px;
+  background: var(--color-secondary);
+  box-shadow: var(--shadow-soft);
+  transform: translateX(-110%);
+  transition: transform var(--transition-base);
+  padding: var(--spacing-lg);
+  z-index: 100;
+}
+
+.header-nav.open {
+  transform: translateX(0);
+}
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-nav li {
+  display: block;
+  margin: var(--spacing-xxs) 0;
+}
+
+.header-nav a {
+  display: block;
+  padding: var(--spacing-sm);
+  color: var(--color-primary-contrast);
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  font-weight: 200;
+  transition: background-color var(--transition-base);
+}
+
+.header-nav a:hover {
+  background-color: var(--color-secondary-muted);
+}
+
+.header-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--color-backdrop);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+  z-index: 90;
+}
+
+.header-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* @media (min-width: var(--viewport-min-width-desktop)) {
+  .header-toggle {
+    display: none;
+  }
+
+  .header-nav {
+    background: transparent;
+    position: static;
+    padding: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .header-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header-nav li {
+    margin: 0 auto;
+  }
+
+  .header-backdrop {
+    display: none;
+  }
+} */
