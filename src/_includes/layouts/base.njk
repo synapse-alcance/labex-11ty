@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/var.css">
     <link rel="stylesheet" href="/css/base.css">
 		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/footer.css">
 		{% for sheet in cssSheets %}
 		<link rel="stylesheet" href="/css/{{ sheet }}.css">
 		{% endfor %}
@@ -22,6 +23,10 @@
 	<body>
     {% include "partials/header.njk" %}
 
-		{% block content %}{% endblock %}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+
+		{% include "partials/footer.njk" %}
 	</body>
 </html>

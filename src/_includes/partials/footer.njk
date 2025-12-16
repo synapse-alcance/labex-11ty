@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="footer-content-main">
+    <div class="footer-map-wrapper">
+      <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.490076214535!2d-41.781694099999996!3d-22.3728751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96313c16ca6c89%3A0x7737cbbff615e737!2sLABEX%20%7C%20Resson%C3%A2ncia%20%7C%20Tomografia%20%7C%20Maca%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1765898672453!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-contact-info">
+      {% for info in footer.info %}
+      <div class="footer-contact-single">
+        <div class="footer-contact-icon">
+          <img src="{{ info.imgSrc }}" alt="{{ info.imgAlt }}">
+        </div>
+        <div class="footer-contact-link">
+          <a href="{{ info.url }}">{{ info.text | safe }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="footer-content-additional">
+    <div class="footer-labex">
+      <p>LABEX - Laboratórios de Exames Ltda.
+      <br/>CNPJ: 36.290.906/0001-35</p>
+    </div>
+    <div class="footer-synapse">
+      <p>
+        <a href="https://synapse.ad">Desenvolvido por:
+          <br/>Synapse Alcance Digital</a>
+      </p>
+    </div>
+  </div>
+</footer>

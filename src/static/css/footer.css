@@ -1,0 +1,61 @@
+.footer {
+  --color-labex: rgb(212, 218, 225);
+  --color-synapse: rgb(181, 191, 202);
+  background-color: var(--color-primary);
+}
+
+.footer-map-wrapper {
+  width: 100%;
+  height: 30vh;
+}
+
+.footer-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.footer-contact-info {
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.footer-contact-single {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-icon {
+  flex: 0 0 28px;
+}
+
+.footer-contact-link {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-tight);
+}
+
+.footer-contact-link a {
+  color: var(--color-primary-contrast);
+}
+
+.footer-labex p {
+  margin: 0;
+  color: var(--color-labex);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-tight);
+  text-align: center;
+}
+
+.footer-synapse {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: var(--line-height-tight);
+  text-align: center;
+}
+
+.footer-synapse a {
+  color: var(--color-synapse);
+}

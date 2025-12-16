@@ -1,0 +1,58 @@
+{
+  "info": [
+    {
+      "imgSrc": "icon/whatsapp-brands-solid-full.svg",
+      "imgAlt": "Ícone do Whatsapp.",
+      "text": "Whatsapp",
+      "url": "https://wa.me/5522988240354"
+    },
+    {
+      "imgSrc": "icon/instagram-brands-solid-full.svg",
+      "imgAlt": "Ícone do Instagram.",
+      "text": "Instagram",
+      "url": "https://www.instagram.com/labeximagem"
+    },
+    {
+      "imgSrc": "icon/square-facebook-brands-solid-full.svg",
+      "imgAlt": "Ícone do Facebook.",
+      "text": "Facebook",
+      "url": "https://www.facebook.com/labeximagem"
+    },
+    {
+      "imgSrc": "icon/x-twitter-brands-solid-full.svg",
+      "imgAlt": "Ícone do X (antigo Twitter).",
+      "text": "X (Twitter)",
+      "url": "https://x.com/labeximagem"
+    },
+    {
+      "imgSrc": "icon/square-linkedin-brands-solid-full.svg",
+      "imgAlt": "Ícone do Linkedin.",
+      "text": "Linkedin",
+      "url": "https://www.linkedin.com/company/labeximagem/"
+    },
+    {
+      "imgSrc": "icon/envelope-open-solid-full.svg",
+      "imgAlt": "Ícone de envelope.",
+      "text": "atendimento@labeximagem.com",
+      "url": "mailto:atendimento@labeximagem.com"
+    },
+    {
+      "imgSrc": "icon/phone-solid-full.svg",
+      "imgAlt": "Ícone de telefone.",
+      "text": "(22) 2772-4257",
+      "url": "tel:+55-22-2772-4257"
+    },
+    {
+      "imgSrc": "icon/phone-solid-full.svg",
+      "imgAlt": "Ícone de telefone.",
+      "text": "(22) 2757-6300",
+      "url": "tel:+55-22-2757-6300"
+    },
+    {
+      "imgSrc": "icon/map-location-dot-solid-full.svg",
+      "imgAlt": "Ícone de mapa com pino de localização.",
+      "text": "R. Conde de Araruama, 440, Centro<br/>Macaé - RJ, 27910-640",
+      "url": "https://maps.app.goo.gl/2nqLJPCCUr1bsov69"
+    }
+  ]
+}
