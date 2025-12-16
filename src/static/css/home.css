@@ -63,7 +63,7 @@
 .examinations {
   background-image:
     linear-gradient(rgba(255 255 255 / 0.9), rgba(255 255 255 / 0.9)),
-    url("img/bg1.webp");
+    url("../img/bg1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
   background-image:
     linear-gradient(rgba(92 128 179 / 0.1), rgba(92 128 179 / 0.25)),
     linear-gradient(rgba(255 255 255 / 0.5), rgba(255 255 255 / 0.5)),
-    url("img/bg2.webp");
+    url("../img/bg2.webp");
   background-position: center;
   background-size: cover;
 }
@@ -122,7 +122,7 @@
 .differentiators {
   background-image:
     linear-gradient(rgba(255 255 255 / 0.15), rgba(255 255 255 / 0.15)),
-    url("img/bg4.webp");
+    url("../img/bg4.webp");
   background-position: center;
   background-size: cover;
 }
