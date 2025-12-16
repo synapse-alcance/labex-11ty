@@ -34,6 +34,7 @@
 
   /* Typography */
   --font-family-base: Montserrat, Helvetica, Arial, sans-serif;
+  --font-family-alt: Oxanium, Tahoma, Geneva, Verdana, sans-serif;
 
   --font-size-base: 16px;
   --font-size-xs: 0.75rem;  /* 12px */
