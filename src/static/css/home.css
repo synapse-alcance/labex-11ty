@@ -239,7 +239,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: var(--left-text-border);
-  height: calc(100% - var(--spacing-md));
+  height: calc(100% - var(--spacing-sm));
   background-color: var(--color-accent);
 }
 
