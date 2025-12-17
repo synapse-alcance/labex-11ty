@@ -1,7 +1,7 @@
 ---
 title: Labex | Home
 permalink: "/"
-cssSheets: ["home", "buttons", "sections", "cards"]
+cssSheets: ["home", "buttons", "sections", "cards", "results"]
 jsScripts: ["home"]
 ---
 {% extends "layouts/base.njk" %}
@@ -18,6 +18,8 @@ jsScripts: ["home"]
       <a href="{{ site.info.waUrl }}" class="btn btn-primary">Agendar</a>
     </div>
   </section>
+
+  {% include "partials/results.njk" %}
 
   <section class="section examinations">
     <div class="container">
