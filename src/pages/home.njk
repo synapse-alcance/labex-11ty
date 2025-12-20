@@ -1,6 +1,6 @@
 ---
 title: Labex | Home
-permalink: "/"
+permalink: "{{ site.baseurl }}/"
 cssSheets: ["home", "buttons", "sections", "cards", "results"]
 jsScripts: ["home"]
 ---
@@ -9,7 +9,7 @@ jsScripts: ["home"]
 
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-      <source src="vid/labex-intro-video.mp4" type="video/mp4">
+      <source src="{{ baseurl }}/vid/labex-intro-video.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -32,7 +32,7 @@ jsScripts: ["home"]
         {% for paragraph in subsection.text %}
         <p>{{ paragraph }}</p>
         {% endfor %}
-        <img src="{{ subsection.imgSrc }}" alt="{{ subsection.imgAlt }}">
+        <img src="{{ baseurl }}{{ subsection.imgSrc }}" alt="{{ subsection.imgAlt }}">
         <h3>Exames disponíveis:</h3>
         <ul>
           {% for item in subsection.list %}
@@ -60,12 +60,12 @@ jsScripts: ["home"]
           <div class="plans-track">
             {% for company in plans.companies %}
             <div class="plans-slide">
-              <img src="{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
+              <img src="{{ baseurl }}{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
             </div>
             {% endfor %}
             {% for company in plans.companies %}
             <div class="plans-slide">
-              <img src="{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
+              <img src="{{ baseurl }}{{ company.imgSrc }}" alt="{{ company.imgAlt }}">
             </div>
             {% endfor %}
           </div>
@@ -94,7 +94,7 @@ jsScripts: ["home"]
           <div class="card fade-up">
             <div class="differentiators-card-top">
               <div class="differentiators-card-icon pop">
-                <img src="{{ card.imgSrc }}" alt="{{ card.imgAlt }}">
+                <img src="{{ baseurl }}{{ card.imgSrc }}" alt="{{ card.imgAlt }}">
               </div>
               <div class="differentiators-card-title">
                 <h3 class="card-title">{{ card.title }}</h3>
@@ -124,11 +124,11 @@ jsScripts: ["home"]
             <div class="testimonials-quote">
               <div class="testimonials-quote-vignette">
                 <div class="testimonials-quote-left">
-                  <img src="icon/quote-left-solid-full.svg" alt="Ícone de aspas duplas à esquerda.">
+                  <img src="{{ baseurl }}/icon/quote-left-solid-full.svg" alt="Ícone de aspas duplas à esquerda.">
                 </div>
                 <div class="testimonials-quote-text">
                   {{ quote.text }}
-                  <img src="icon/quote-right-solid-full.svg" alt="Ícone de aspas duplas à direita.">
+                  <img src="{{ baseurl }}/icon/quote-right-solid-full.svg" alt="Ícone de aspas duplas à direita.">
                 </div>
               </div>
               <div class="testimonials-quote-authorship">

@@ -7,7 +7,7 @@
       {% for info in footer.info %}
       <div class="footer-contact-single">
         <div class="footer-contact-icon">
-          <img src="{{ info.imgSrc }}" alt="{{ info.imgAlt }}">
+          <img src="{{ baseurl }}{{ info.imgSrc }}" alt="{{ info.imgAlt }}">
         </div>
         <div class="footer-contact-link">
           <a href="{{ info.url }}">{{ info.text | safe }}</a>
