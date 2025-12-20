@@ -1,0 +1,55 @@
+---
+title: Labex | Exames
+permalink: "{{ site.baseurl }}/exames/"
+cssSheets: ["examinations", "sections", "buttons", "results"]
+jsScripts: ["examinations"]
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<section class="examinations-cover">
+  <div class="examinations-cover-content">
+    <h1>{{ cover.title }}</h1>
+    <p>{{ cover.tagline }}</p>
+    <a href="{{ cover.ctaPath }}" class="btn btn-primary">{{ cover.ctaText }}</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h1>{{ exams.title }}</h1>
+      {% for paragraph in exams.intro %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+    <div class="section-content">
+      <label for="dropdown" class="dropdown-label">{{ exams.label }}</label>
+      <select id="dropdown" class="dropdown-values">
+        {% for gp in exams.groups %}
+        <option value="{{ gp.value }}">{{ gp.title }}</option>
+        {% endfor %}
+      </select>
+      <div class="lista-exames">
+        {% for gp in exams.groups %}
+        <div class="group" data-group="{{ gp.value }}">
+          <h2>{{ gp.title }}</h2>
+          {% for exam in gp.exams %}
+          <div class="exam fade-up {% if exam.last %}exam-last{% endif %}">
+            <h3>{{ exam.title }}</h3>
+            <p>{{ exam.description }}</p>
+            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/results.njk" %}
+
+{% endblock content %}

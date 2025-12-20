@@ -1,0 +1,163 @@
+{
+  "cover": {
+    "title": "Exames com tecnologia e cuidado",
+    "tagline": "Saiba como funciona cada exame e prepare-se com tranquilidade.",
+    "ctaText":"Agende agora",
+    "ctaPath": "#"
+  },
+  "exams": {
+    "title": "Exames",
+    "intro": ["Cada exame tem um papel fundamental na investigação e acompanhamento da saúde. Nesta seção, você encontra descrições objetivas de cada procedimento, além de instruções de preparo em PDF para garantir que o exame seja realizado com máxima precisão e conforto.",
+    "Explore as categorias e selecione o exame desejado para acessar todas as informações necessárias."],
+    "label": "Selecione os tipos de exames para os quais deseja visualizar detalhes:",
+    "groups": [
+      {
+        "value": "ressonancias",
+        "title": "Ressonâncias",
+        "description": "",
+        "exams": [
+          {
+            "title": "Ressonância de alto campo com Inteligência Artificial",
+            "description": "Exame realizado em equipamento de última geração, que utiliza inteligência artificial para aprimorar a qualidade das imagens e oferecer diagnósticos mais precisos, com maior rapidez e conforto para o paciente.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância com preparo intestinal para endometriose",
+            "description": "Indicado para avaliação detalhada da endometriose, este exame utiliza preparo intestinal específico para melhorar a visualização das estruturas pélvicas e fornecer informações essenciais para o tratamento.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância de corpo inteiro",
+            "description": "Permite uma análise abrangente de todo o organismo em um único exame, auxiliando na detecção precoce de alterações e oferecendo uma visão global da saúde do paciente.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância com contraste hepatócito-específico",
+            "description": "Exame direcionado ao fígado, que utiliza contraste especial para avaliar de forma mais precisa lesões hepáticas e diferenciar alterações benignas de malignas.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância com quantificação de ferro e gordura hepática",
+            "description": "Avalia o acúmulo de ferro e gordura no fígado, fornecendo dados importantes para o acompanhamento de doenças hepáticas como esteatose e hemocromatose.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância de crânio com tractografia/espectroscopia",
+            "description": "Exame avançado que, além da imagem convencional do crânio, permite mapear conexões das fibras nervosas (tractografia) e analisar a composição química dos tecidos cerebrais (espectroscopia), contribuindo para diagnósticos neurológicos mais completos.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ressonância cardíaca",
+            "description": "Exame não invasivo que avalia a estrutura e o funcionamento do coração, permitindo identificar alterações anatômicas, funcionais e de perfusão miocárdica com alta precisão.",
+            "preparation": "#"
+          },
+          {
+            "title": "Enterorressonância",
+            "description": "Indicado para estudo detalhado do intestino delgado, este exame utiliza contraste e técnicas específicas para identificar inflamações, estenoses e outras alterações relacionadas a doenças intestinais, como a doença de Crohn.",
+            "preparation": "#",
+            "last": true
+          }
+        ]
+      },
+      {
+        "value": "tomografias",
+        "title": "Tomografias",
+        "description": "",
+        "exams": [
+          {
+            "title": "Tomografia multislice 128 canais",
+            "description": "Exame de alta resolução realizado em equipamento moderno, capaz de gerar imagens detalhadas em poucos segundos. Permite avaliar diferentes regiões do corpo com precisão, reduzindo o tempo de exposição e aumentando o conforto do paciente.",
+            "preparation": "#"
+          },
+          {
+            "title": "Angiotomografia de coronárias",
+            "description": "Exame não invasivo que utiliza tomografia para visualizar as artérias coronárias. Indicado para investigar obstruções, placas de gordura ou outras alterações que possam comprometer a circulação sanguínea no coração.",
+            "preparation": "#"
+          },
+          {
+            "title": "Tomografia para score de cálcio",
+            "description": "Avalia a presença e a quantidade de cálcio nas artérias coronárias. É um exame rápido e seguro, utilizado para estimar o risco de doenças cardíacas e auxiliar na prevenção de eventos cardiovasculares.",
+            "preparation": "#"
+          },
+          {
+            "title": "Tomografia com perfusão",
+            "description": "Exame avançado que analisa o fluxo sanguíneo em órgãos ou tecidos específicos. Permite identificar áreas com redução de irrigação, sendo útil no diagnóstico de doenças neurológicas, cardíacas e oncológicas.",
+            "preparation": "#",
+            "last": true
+          }
+        ]
+      },
+      {
+        "value": "ultrassonografias",
+        "title": "Ultrassonografias",
+        "description": "",
+        "exams": [
+          {
+            "title": "Ultrassonografia geral",
+            "description": "Exame não invasivo que utiliza ondas sonoras para gerar imagens em tempo real de diferentes órgãos e estruturas internas. É indicado para avaliação de abdômen, rins, tireoide, articulações e outras regiões, permitindo diagnósticos rápidos e seguros sem exposição à radiação.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ultrassonografia obstétrica 3D/4D",
+            "description": "Exame realizado durante a gestação que possibilita visualizar o bebê em três dimensões e até acompanhar seus movimentos em tempo real. Além de auxiliar na avaliação do desenvolvimento fetal, proporciona uma experiência emocionante e de proximidade para os pais.",
+            "preparation": "#"
+          },
+          {
+            "title": "Doppler vascular",
+            "description": "Exame que analisa o fluxo sanguíneo nas artérias e veias, identificando possíveis obstruções, estreitamentos ou alterações na circulação. É fundamental para investigar doenças vasculares e acompanhar tratamentos de forma precisa e segura.",
+            "preparation": "#",
+            "last": true
+          }
+        ]
+      },
+      {
+        "value": "demais",
+        "title": "Demais exames",
+        "description": "",
+        "exams": [
+          {
+            "title": "Radiografia digital",
+            "description": "Exame rápido e seguro que utiliza radiação em baixa dose para gerar imagens de ossos e estruturas internas. A tecnologia digital permite maior nitidez e agilidade na entrega dos resultados.",
+            "preparation": "#"
+          },
+          {
+            "title": "Mamografia digital",
+            "description": "Exame de rastreamento essencial para a saúde da mulher, indicado na prevenção e diagnóstico precoce do câncer de mama. A versão digital oferece imagens mais detalhadas e maior conforto durante a realização.",
+            "preparation": "#"
+          },
+          {
+            "title": "Densitometria óssea",
+            "description": "Avalia a densidade mineral dos ossos, sendo fundamental para detectar osteoporose e acompanhar a saúde óssea ao longo do tempo. É um exame simples, rápido e indolor.",
+            "preparation": "#"
+          },
+          {
+            "title": "Ecocardiograma com Doppler",
+            "description": "Exame que utiliza ultrassom para avaliar a anatomia e o funcionamento do coração. Com o recurso Doppler, também analisa o fluxo sanguíneo, permitindo diagnósticos precisos de alterações cardíacas.",
+            "preparation": "#"
+          },
+          {
+            "title": "Eletrocardiograma",
+            "description": "Registra a atividade elétrica do coração por meio de eletrodos fixados na pele. É um exame rápido e indolor, indicado para investigar arritmias e outras alterações cardíacas.",
+            "preparation": "#"
+          },
+          {
+            "title": "Teste ergométrico",
+            "description": "Também conhecido como teste de esforço, avalia o desempenho do coração durante atividade física controlada. É utilizado para investigar sintomas como dor no peito e falta de ar, além de auxiliar na prevenção de doenças cardíacas.",
+            "preparation": "#"
+          },
+          {
+            "title": "Holter",
+            "description": "Monitoramento contínuo da atividade elétrica do coração por 24 horas ou mais. Permite identificar arritmias e alterações que não aparecem em exames de curta duração, oferecendo uma visão mais completa da saúde cardíaca.",
+            "preparation": "#"
+          },
+          {
+            "title": "M.A.P.A. (Monitorização Ambulatorial da Pressão Arterial)",
+            "description": "Exame que mede a pressão arterial de forma contínua ao longo de 24 horas, durante as atividades cotidianas do paciente. É fundamental para avaliar hipertensão e acompanhar a eficácia de tratamentos.",
+            "preparation": "#",
+            "last": true
+          }
+        ]
+      }
+    ]
+  }
+}
