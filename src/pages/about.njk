@@ -1,0 +1,56 @@
+---
+title: Labex | Sobre
+permalink: "{{ site.baseurl }}/sobre/"
+cssSheets: ["sections", "about"]
+jsScripts: ["about"]
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+  <section class="section about-history">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ history.title }}</h1>
+      </div>
+      <div class="section-content">
+        {% for paragraph in history.content %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-timeline">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ timeline.title }}</h1>
+      </div>
+      <div class="section-content">
+        <ul>
+          {% for bullet in timeline.bullets %}
+          <li>
+            <strong>{{ bullet.intro }}:</strong>
+            {{ bullet.text }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-essence">
+    <div class="container">
+      <div class="section-header">
+        <h1>{{ essence.title }}</h1>
+      </div>
+      <div class="section-content">
+        {% for paragraph in essence.content %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
