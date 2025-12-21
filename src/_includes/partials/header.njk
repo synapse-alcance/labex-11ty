@@ -12,9 +12,14 @@
 
     <nav class="header-nav">
       <ul>
-        {% for item in header.menu %}
-        <li class="header-nav-link">
+        {% for item in header.menu.internal %}
+        <li>
           <a href="{{ site.baseurl }}{{ item.path }}" target="_self">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+        {% for item in header.menu.external %}
+        <li>
+          <a href="{{item.url}}" target="_blank" aria-label="{{ item.label }} (link externo)">{{ item.label }} <img src="{{ site.baseurl }}/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         {% endfor %}
       </ul>
