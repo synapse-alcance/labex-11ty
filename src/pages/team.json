@@ -1,0 +1,61 @@
+{
+  "cover": {
+    "title": "Nossa equipe",
+    "tagline": "Conheça quem está por trás de cada diagnóstico.",
+    "ctaText": "Fale conosco",
+    "ctaPath": "#"
+  },
+  "doctors": [
+    {
+      "name": "Drª Mariana Alves",
+      "title": "Médica Radiologista",
+      "crm": "12345",
+      "rqe": "54321",
+      "imgSrc": "/img/team_a.webp",
+      "imgAlt": "",
+      "bio": [
+        "Formada em Medicina pela Universidade Federal Fluminense, com especialização em radiologia e diagnóstico por imagem.",
+        " Atua há mais de 10 anos em clínicas e hospitais da região de Macaé, com foco em exames de ressonância magnética e tomografia computadorizada.",
+        "Reconhecida pela atenção cuidadosa aos pacientes e pela busca constante de atualização científica."
+      ]
+    },
+    {
+      "name": "Drª Camila Duarte",
+      "title": "Médica Radiologista",
+      "crm": "67890",
+      "rqe": "98760",
+      "imgSrc": "/img/team_b.webp",
+      "imgAlt": "",
+      "bio": [
+        "Graduada em Medicina pela Universidade Federal do Rio de Janeiro, com residência em radiologia.",
+        "Atua em Macaé na área de ultrassonografia e mamografia digital, com especial interesse em diagnóstico precoce de doenças ginecológicas.",
+        "É conhecida pela empatia e clareza na comunicação com os pacientes."
+      ]
+    }
+  ],
+  "technicians": [
+    {
+      "name": "Ana Paula Ferreira",
+      "title": "Técnica em Radiologia",
+      "imgSrc": "/img/team_c.webp",
+      "imgAlt": "",
+      "bio": [
+        "Formada em Radiologia pela Escola Técnica de Saúde da região dos Lagos, atua em Macaé na operação de equipamentos de tomografia e radiografia digital.",
+        "Garante qualidade nas imagens e acolhimento durante os procedimentos, com perfil jovem e dinâmico, sempre atenta ao conforto dos pacientes."
+      ]
+    },
+    {
+      "name": "Maria Helena Costa",
+      "title": "Técnica em Radiologia",
+      "imgSrc": "/img/team_d.webp",
+      "imgAlt": "",
+      "bio": [
+        "Com mais de 25 anos de experiência na área, é referência em exames de densitometria óssea e mamografia digital em Macaé.",
+        "Reconhecida pela dedicação e pelo cuidado em orientar pacientes em todas as etapas do exame.",
+        "Sua experiência contribui para a excelência e segurança nos diagnósticos da clínica."
+      ]
+    }
+  ],
+  "ctaText": "Agende agora",
+  "ctaPath": "#"
+}

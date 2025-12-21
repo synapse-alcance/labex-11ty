@@ -1,0 +1,67 @@
+---
+title: Labex | Equipe
+permalink: "{{ site.baseurl }}/equipe/"
+cssSheets: ["sections", "team", "buttons"]
+jsScripts: ["team"]
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<section class="team-cover">
+  <div class="team-cover-content">
+    <h1>{{ cover.title }}</h1>
+    <p>{{ cover.tagline }}</p>
+    <a href="{{ cover.ctaPath }}" class="btn btn-primary">{{ cover.ctaText }}</a>
+  </div>
+</section>
+
+<section class="section team-staff">
+  <div class="container">
+    <div class="section-header">
+      <h1>Equipe</h1>
+      <p>
+        Na Labex, acreditamos que tecnologia só faz sentido quando está aliada ao olhar humano. Nossa equipe é formada por médicos radiologistas, técnicos e profissionais de apoio que trabalham juntos para oferecer diagnósticos precisos e acolhimento em cada etapa.
+      </p>
+    </div>
+    <div class="section-content">
+      <h2>Médicos</h2>
+      {% for doctor in doctors %}
+      <div class="team-card">
+        <div class="picture-wrapper">
+          <img class="picture" src="{{ baseurl }}{{ doctor.imgSrc }}" alt="{{ doctor.imgAlt }}">
+        </div>
+        <h3 class="name">{{ doctor.name }}</h3>
+        <p class="title">
+          {{ doctor.title }} <br/>
+          <span class="registration">
+            (CRM: {{doctor.crm}}, RQE: {{doctor.rqe}})
+          </span>
+        </p>
+        {% for paragraph in doctor.bio %}
+        <p class="bio">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <h2 class="team-role-title">Técnicos</h2>
+      {% for technician in technicians %}
+      <div class="team-card">
+        <div class="picture-wrapper">
+          <img class="picture" src="{{ baseurl }}{{ technician.imgSrc }}" alt="{{ technician.imgAlt }}">
+        </div>
+        <h3 class="name">{{ technician.name }}</h3>
+        <p class="title">{{ technician.title }}</p>
+        {% for paragraph in technician.bio %}
+        <p class="bio">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="{{ ctaPath }}">{{ ctaText }}</a>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
