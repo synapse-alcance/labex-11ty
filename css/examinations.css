@@ -1,0 +1,96 @@
+.examinations-cover {
+  display: flex;
+  align-items: flex-end;
+  padding-top: var(--header-height-mobile);
+  position: relative;
+  height: 100vh;
+  background: 
+    linear-gradient(var(--color-backdrop), var(--color-backdrop)),
+    url("../img/exames-capa.webp");
+  background-position: 70% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.examinations-cover-content {
+  position: relative;
+  align-self: flex-end;
+  z-index: 3;
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.examinations-cover-content h1 {
+  color: var(--color-primary-contrast);
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-md);
+}
+
+.examinations-cover-content p {
+  color: var(--color-primary-contrast);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  margin-bottom: var(--spacing-xl);
+}
+
+.dropdown-label {
+  display: block;
+  padding-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-xxs);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.dropdown-values {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-sm);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.group {
+  display: none;
+}
+
+.group.show {
+  display: block;
+}
+
+.exam {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.exam p {
+  margin: 0;
+}
+
+.exam-link {
+  display: inline-block;
+  padding: var(--spacing-sm) 0;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.exam-link:hover {
+  color: var(--color-secondary-muted);
+}
+
+.exam-last {
+  border-bottom: none;
+  margin-bottom: var(--spacing-lg);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

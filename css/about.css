@@ -1,0 +1,23 @@
+.about-history {
+  padding-top: calc(var(--header-height-mobile) + var(--spacing-xl));
+  background-image:
+    linear-gradient(rgba(0 0 0 / 0.025) 0%, rgba(0 0 0 / 0) 50%),
+    linear-gradient(rgba(92 128 179 / 0.0), rgba(92 128 179 / 0.50));
+}
+
+.about-timeline {
+  background-image:
+    linear-gradient(rgba(255 255 255 / 0.9), rgba(255 255 255 / 0.9)),
+    url("../img/bg1.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-essence {
+  background-image:
+    linear-gradient(rgba(92 128 179 / 0.1), rgba(92 128 179 / 0.25)),
+    linear-gradient(rgba(255 255 255 / 0.5), rgba(255 255 255 / 0.5)),
+    url("../img/bg2.webp");
+  background-position: center;
+  background-size: cover;
+}
