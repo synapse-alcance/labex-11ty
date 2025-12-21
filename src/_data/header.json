@@ -2,11 +2,11 @@
   "menu": [
     {
       "label": "Home",
-      "path": "#"
+      "path": "/"
     },
     {
       "label": "Exames",
-      "path": "#"
+      "path": "/exames"
     },
     {
       "label": "Convênios",
@@ -14,11 +14,11 @@
     },
     {
       "label": "Equipe",
-      "path": "#"
+      "path": "/equipe"
     },
     {
       "label": "Sobre",
-      "path": "#"
+      "path": "/sobre"
     },
     {
       "label": "Agendamento",

@@ -2,7 +2,7 @@
   <div class="header-content">
 
     <div class="header-logo">
-      <img src="{{ baseurl }}/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
+      <img src="{{ site.baseurl }}/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
     </div>
 
     <button class="header-toggle" aria-expanded="false" aria-controls="site-nav">
@@ -14,7 +14,7 @@
       <ul>
         {% for item in header.menu %}
         <li class="header-nav-link">
-          <a href="{{ item.path }}" target="_self">{{ item.label }}</a>
+          <a href="{{ site.baseurl }}{{ item.path }}" target="_self">{{ item.label }}</a>
         </li>
         {% endfor %}
       </ul>

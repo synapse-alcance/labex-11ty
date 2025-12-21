@@ -30,7 +30,7 @@ jsScripts: ["team"]
       {% for doctor in doctors %}
       <div class="team-card">
         <div class="picture-wrapper">
-          <img class="picture" src="{{ baseurl }}{{ doctor.imgSrc }}" alt="{{ doctor.imgAlt }}">
+          <img class="picture" src="{{ site.baseurl }}{{ doctor.imgSrc }}" alt="{{ doctor.imgAlt }}">
         </div>
         <h3 class="name">{{ doctor.name }}</h3>
         <p class="title">
@@ -48,7 +48,7 @@ jsScripts: ["team"]
       {% for technician in technicians %}
       <div class="team-card">
         <div class="picture-wrapper">
-          <img class="picture" src="{{ baseurl }}{{ technician.imgSrc }}" alt="{{ technician.imgAlt }}">
+          <img class="picture" src="{{ site.baseurl }}{{ technician.imgSrc }}" alt="{{ technician.imgAlt }}">
         </div>
         <h3 class="name">{{ technician.name }}</h3>
         <p class="title">{{ technician.title }}</p>
