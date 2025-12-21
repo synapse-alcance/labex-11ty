@@ -1,28 +1,36 @@
 {
-  "menu": [
-    {
-      "label": "Home",
-      "path": "/"
-    },
-    {
-      "label": "Exames",
-      "path": "/exames"
-    },
-    {
-      "label": "Convênios",
-      "path": "#"
-    },
-    {
-      "label": "Equipe",
-      "path": "/equipe"
-    },
-    {
-      "label": "Sobre",
-      "path": "/sobre"
-    },
-    {
-      "label": "Agendamento",
-      "path": "#"
-    }
-  ]
+  "menu": {
+    "internal": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Exames",
+        "path": "/exames"
+      },
+      {
+        "label": "Convênios",
+        "path": "#"
+      },
+      {
+        "label": "Equipe",
+        "path": "/equipe"
+      },
+      {
+        "label": "Sobre",
+        "path": "/sobre"
+      }
+    ],
+    "external": [
+      {
+        "label": "Agendamento",
+        "url": "#"
+      },
+      {
+        "label": "Resultados",
+        "url": "#"
+      }
+    ]
+  }
 }

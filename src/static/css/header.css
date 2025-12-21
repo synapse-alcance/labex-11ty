@@ -62,6 +62,12 @@
   margin: var(--spacing-xxs) 0;
 }
 
+.header-nav li img {
+  display: inline;
+  height: 0.65em;
+  width: 0.65em;
+}
+
 .header-nav a {
   display: block;
   padding: var(--spacing-sm);
