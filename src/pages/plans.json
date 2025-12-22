@@ -9,8 +9,16 @@
       "name": "Assim Saúde"
     },
     {
+      "logo": "/img/logo-boa-viagem.webp",
+      "name": "Boa Viagem"
+    },
+    {
       "logo": "/img/logo-bradesco.webp",
       "name": "Bradesco"
+    },
+    {
+      "logo": "/img/logo-braseg.webp",
+      "name": "BRASEG"
     },
     {
       "logo": "/img/logo-capesaude.webp",
@@ -31,6 +39,30 @@
     {
       "logo": "/img/logo-fusex.webp",
       "name": "FUSEX"
+    },
+    {
+      "logo": "/img/logo-gama.webp",
+      "name": "GAMA"
+    },
+    {
+      "logo": "/img/logo-geap.webp",
+      "name": "GEAP"
+    },
+    {
+      "logo": "/img/logo-hapvida.webp",
+      "name": "Hapvida"
+    },
+    {
+      "logo": "/img/logo-integral.webp",
+      "name": "Integral"
+    },
+    {
+      "logo": "/img/logo-mediservice.webp",
+      "name": "Mediservice"
+    },
+    {
+      "logo": "/img/logo-paf.webp",
+      "name": "PAF Assistencialrm"
     },
     {
       "logo": "/img/logo-petrobras.webp",
