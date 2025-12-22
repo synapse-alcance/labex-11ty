@@ -1,0 +1,29 @@
+.plans {
+  padding-top: calc(var(--header-height-mobile) + var(--spacing-xl));
+  background-image:
+    linear-gradient(rgba(255 255 255 / 0.9), rgba(255 255 255 / 0.9)),
+    url("../img/bg1.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.plans-logos {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  /* margin-bottom: 24px; */
+}
+
+.plans-card {
+  text-align: center;
+}
+
+.plans-card img {
+  margin: auto;
+  max-width: 30vw;
+  margin-bottom: var(--spacing-xs);
+  filter: drop-shadow(var(--shadow-heading));
+}

@@ -1,0 +1,60 @@
+---
+title: Labex | Convênios
+permalink: "{{ site.baseurl }}/convenios/"
+cssSheets: ["sections", "plans", "buttons"]
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<section class="section plans">
+  <div class="container">
+    <div class="section-header">
+      <h1>Convênios</h1>
+      <p>Parcerias que garantem acesso facilitado aos nossos exames</p>
+    </div>
+
+    <div class="section-content">
+      <div>
+        <h2>Lista de convênios</h2>
+        <p>A Labex mantém parcerias com os principais planos de saúde, garantindo acesso facilitado aos exames com qualidade e segurança.</p>
+      </div>
+
+      <div class="plans-logos">
+        {% for company in companies %}
+        <div class="plans-card">
+          <img src="{{ site.baseurl }}{{ company.logo }}" alt="{{ company.name }}">
+          <p>{{ company.name }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div>
+        <h2>Orientações</h2>
+        <p>
+          Para realizar seu exame pelo convênio, basta apresentar sua carteirinha válida e documento
+          de identidade. Em alguns casos, pode ser necessária autorização prévia — nossa equipe está
+          à disposição para orientar você.
+        </p>
+      </div>
+
+      <div>
+        <h2>Diferenciais da Labex</h2>
+        <ul>
+          <li>Atendimento humanizado</li>
+          <li>Tecnologia de ponta</li>
+          <li>Equipe especializada</li>
+          <li>Estrutura moderna em Macaé</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a class="btn btn-primary" href="{{ ctaPath }}">{{ ctaText }}</a>
+    </div>
+  </div>
+</section>
+
+
+{% endblock content %}

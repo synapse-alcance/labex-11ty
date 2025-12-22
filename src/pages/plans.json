@@ -1,0 +1,54 @@
+{
+  "companies": [
+    {
+      "logo": "/img/logo-amil.webp",
+      "name": "Amil"
+    },
+    {
+      "logo": "/img/logo-assim-saude.webp",
+      "name": "Assim Saúde"
+    },
+    {
+      "logo": "/img/logo-bradesco.webp",
+      "name": "Bradesco"
+    },
+    {
+      "logo": "/img/logo-capesaude.webp",
+      "name": "Capesaúde"
+    },
+    {
+      "logo": "/img/logo-cassi.webp",
+      "name": "CASSI"
+    },
+    {
+      "logo": "/img/logo-eldorado.webp",
+      "name": "Eldorado"
+    },
+    {
+      "logo": "/img/logo-epharma.webp",
+      "name": "e-Pharma"
+    },
+    {
+      "logo": "/img/logo-fusex.webp",
+      "name": "FUSEX"
+    },
+    {
+      "logo": "/img/logo-petrobras.webp",
+      "name": "Saúde PETROBRAS"
+    },
+    {
+      "logo": "/img/logo-saude-blue.webp",
+      "name": "Saúde Blue"
+    },
+    {
+      "logo": "/img/logo-sulamerica.webp",
+      "name": "Sulamérica"
+    },
+    {
+      "logo": "/img/logo-unimed.webp",
+      "name": "UNIMED"
+    }
+  ],
+  "ctaText": "Fale conosco",
+  "ctaPath": "#"
+}
