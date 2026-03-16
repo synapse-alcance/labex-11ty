@@ -65,7 +65,7 @@
       ]
     }],
   "ctaText": "Detalhes dos exames",
-  "ctaPath": "#"
+  "ctaPath": "/exames"
   },
 
   "plans": {
@@ -99,7 +99,7 @@
       "Para que você possa conferir todos os planos aceitos, disponibilizamos uma página completa com a lista atualizada de convênios. Assim, você encontra rapidamente o que precisa e segue direto para o agendamento do seu exame."
     ],
   "ctaText": "Todos os convênios",
-  "ctaPath": "#"
+  "ctaPath": "/convenios"
   },
 
   "differentiators": {

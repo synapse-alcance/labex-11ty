@@ -42,7 +42,7 @@ jsScripts: ["home"]
       </div>
       {% endfor %}
       <div class="section-cta">
-        <a class="btn btn-primary" href="{{ examinations.ctaPath }}">{{ examinations.ctaText }}</a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}{{ examinations.ctaPath }}">{{ examinations.ctaText }}</a>
       </div>
     </div>
   </section>
@@ -75,7 +75,7 @@ jsScripts: ["home"]
         {% endfor %}
       </div>
       <div class="section-cta">
-        <a class="btn btn-primary" href="{{ plans.ctaPath }}">{{ plans.ctaText }}</a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}{{ plans.ctaPath }}">{{ plans.ctaText }}</a>
       </div>
     </div>
   </section>
