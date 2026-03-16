@@ -1,7 +1,8 @@
 {
   "url": "https://labeximagem.com/",
   "baseurl": "/labex-11ty",
-  "info": {
-    "waUrl": "https://wa.me/5522988240354"
+  "links": {
+    "whatsapp": "https://wa.me/5522988240354",
+    "results": "http://pacs.labeximagem.com/"
   }
 }

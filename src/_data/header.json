@@ -25,11 +25,11 @@
     "external": [
       {
         "label": "Agendamento",
-        "url": "#"
+        "linkKey": "whatsapp"
       },
       {
         "label": "Resultados",
-        "url": "#"
+        "linkKey": "results"
       }
     ]
   }
