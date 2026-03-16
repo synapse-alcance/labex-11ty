@@ -1,6 +1,7 @@
 .examinations-cover {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   padding-top: var(--header-height-mobile);
   position: relative;
   height: 100vh;
@@ -15,6 +16,7 @@
 
 .examinations-cover-content {
   position: relative;
+  max-width: var(--container-max-width);
   align-self: flex-end;
   z-index: 3;
   text-align: center;
