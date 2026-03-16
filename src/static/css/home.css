@@ -72,6 +72,9 @@
 
 .examinations img {
   display: block;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: var(--spacing-md);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius-md);
@@ -132,6 +135,12 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: var(--gap-md);
+}
+
+.differentiators-cards {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .differentiators-card-icon {
