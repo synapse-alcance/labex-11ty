@@ -6,7 +6,8 @@
 
 .footer-map-wrapper {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
+  min-height: 30vw;
 }
 
 .footer-map {
@@ -16,6 +17,9 @@
 }
 
 .footer-contact-info {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--spacing-md) var(--spacing-lg);
 }
 
