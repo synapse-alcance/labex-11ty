@@ -23,7 +23,7 @@
 
 .plans-card img {
   margin: auto;
-  max-width: 30vw;
+  max-width: min(30vw, 150px);
   margin-bottom: var(--spacing-xs);
   filter: drop-shadow(var(--shadow-heading));
 }
