@@ -2,8 +2,8 @@
   <div class="header-content">
 
     <div class="header-logo">
-      <img src="{{ site.baseurl }}/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
-    </div>
+      <a href="{{ site.baseurl }}/" target="_self">{{ item.label }}<img src="{{ site.baseurl }}/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
+    </div></a>
 
     <button class="header-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Menu</span>
@@ -19,7 +19,7 @@
         {% endfor %}
         {% for item in header.menu.external %}
         <li>
-          <a href="{{ site.links[item.linkKey] }}" target="_blank" aria-label="{{ item.label }} (link externo)">{{ item.label }} <img src="{{ site.baseurl }}/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
+          <a href="{{ site.links[item.linkKey] }}" target="_blank" aria-label="{{ item.label }} (link externo)"> {{ item.label }} <img src="{{ site.baseurl }}/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         {% endfor %}
       </ul>
