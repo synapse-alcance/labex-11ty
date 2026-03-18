@@ -112,6 +112,8 @@
 
   .header-content {
     height: var(--header-height-desktop);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
   }
 
   .header-toggle {
