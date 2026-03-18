@@ -278,3 +278,92 @@
   font-weight: 200;
   color: var(--color-text-muted);
 }
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+    min-height: 560px;
+  }
+
+  .hero-content {
+    align-self: center;
+    text-align: left;
+    max-width: 640px;
+  }
+
+  .results-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .examinations .section-content {
+    display: flex;
+    gap: var(--spacing-xl);
+  }
+
+  .examinations .column-1 {
+    flex: 0 0 60%;
+  }
+
+  .examinations .column-1 img {
+    margin: 0;
+    display: block;
+    min-width: 90%;
+  }
+
+  .plans .section-content {
+    max-width: 1000px;
+  }
+
+  .plans-slide {
+    height: 56px;
+    margin-right: 64px;
+  }
+
+  .differentiators-cards {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+  }
+
+  .differentiators-cards .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.card + .card {
+    margin-top: 0;
+  }
+
+  .testimonials-quotes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+
+  .testimonials-quote {
+    margin: 0;
+  }
+
+  .section-cta {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plans-track {
+    animation: none;
+  }
+}

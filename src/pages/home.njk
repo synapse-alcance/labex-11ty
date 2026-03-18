@@ -28,17 +28,23 @@ jsScripts: ["home"]
       </div>
       {% for subsection in examinations.subsections %}
       <div class="section-content">
-        <h2>{{ subsection.title }}</h2>
-        {% for paragraph in subsection.text %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
-        <img src="{{ site.baseurl }}{{ subsection.imgSrc }}" alt="{{ subsection.imgAlt }}">
-        <h3>Exames disponíveis:</h3>
-        <ul>
-          {% for item in subsection.list %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
+        <div class="column-1">
+          <div>
+            <h2>{{ subsection.title }}</h2>
+            {% for paragraph in subsection.text %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+          <img src="{{ site.baseurl }}{{ subsection.imgSrc }}" alt="{{ subsection.imgAlt }}">
+        </div>
+        <div class="column-2">
+          <h3>Exames disponíveis:</h3>
+          <ul>
+            {% for item in subsection.list %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
       {% endfor %}
       <div class="section-cta">
