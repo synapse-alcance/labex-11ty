@@ -112,7 +112,7 @@
 
   .header-content {
     height: var(--header-height-desktop);
-    max-width: var(--container-max-width);
+    max-width: 1024px;
     margin: 0 auto;
   }
 
