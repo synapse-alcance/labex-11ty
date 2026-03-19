@@ -14,7 +14,6 @@
   align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-md);
-  /* margin-bottom: 24px; */
 }
 
 .plans-card {
@@ -26,4 +25,13 @@
   max-width: min(30vw, 150px);
   margin-bottom: var(--spacing-xs);
   filter: drop-shadow(var(--shadow-heading));
+}
+
+
+@media (min-width: 768px) {
+  .plans-logos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
 }
