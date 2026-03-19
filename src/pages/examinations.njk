@@ -38,13 +38,15 @@ jsScripts: ["examinations"]
         {% for gp in exams.groups %}
         <div class="group" data-group="{{ gp.value }}">
           <h2>{{ gp.title }}</h2>
-          {% for exam in gp.exams %}
-          <div class="exam fade-up {% if exam.last %}exam-last{% endif %}">
-            <h3>{{ exam.title }}</h3>
-            <p>{{ exam.description }}</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          <div class="group-columns">
+            {% for exam in gp.exams %}
+            <div class="exam fade-up {% if exam.last %}exam-last{% endif %}">
+              <h3>{{ exam.title }}</h3>
+              <p>{{ exam.description }}</p>
+              <a class="exam-link" href="#">Instruções de preparo 📄</a>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         {% endfor %}
       </div>
