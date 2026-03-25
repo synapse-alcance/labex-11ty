@@ -14,10 +14,6 @@
         "path": "/convenios"
       },
       {
-        "label": "Equipe",
-        "path": "/equipe"
-      },
-      {
         "label": "Sobre",
         "path": "/sobre"
       }
