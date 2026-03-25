@@ -43,7 +43,7 @@ jsScripts: ["examinations"]
             <div class="exam fade-up {% if exam.last %}exam-last{% endif %}">
               <h3>{{ exam.title }}</h3>
               <p>{{ exam.description }}</p>
-              <a class="exam-link" href="#">Instruções de preparo 📄</a>
+              <a class="exam-link" href="{{ site.baseurl }}{{ exam.preparation }}" target="_blank">Instruções de preparo 📄</a>
             </div>
             {% endfor %}
           </div>

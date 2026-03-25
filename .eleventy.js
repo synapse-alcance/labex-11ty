@@ -11,7 +11,8 @@ module.exports = (config) => {
     "src/static/icon" : site.baseurl + "/icon",
     "src/static/img" : site.baseurl + "/img",
     "src/static/js" : site.baseurl + "/js",
-    "src/static/vid" : site.baseurl + "/vid"
+    "src/static/vid" : site.baseurl + "/vid",
+    "src/static/misc/instructions-placeholder.pdf" : site.baseurl + "/pdf/instructions-placeholder.pdf"
   });
 	return {
 		dir: {
