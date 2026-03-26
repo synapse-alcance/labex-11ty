@@ -8,9 +8,18 @@ jsScripts: ["home"]
 {% block content %}
 
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="{{ site.baseurl }}/vid/labex-intro-video.mp4" type="video/mp4">
+    <video id="hero-video" class="hero-video" poster="{{ site.baseurl }}/img/hero-intro-fallback.webp" autoplay muted loop playsinline>
     </video>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const video = document.getElementById("hero-video");
+        const source = document.createElement("source");
+        source.src = "{{ site.baseurl }}/vid/labex-intro-video.webm";
+        source.type = "video/webm";
+        video.appendChild(source);
+        video.load();
+      });
+    </script>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Tecnologia avançada, cuidado que acolhe</h1>
