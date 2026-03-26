@@ -21,3 +21,14 @@
   background-position: center;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+
+  .about-history .section-content,
+  .about-timeline .section-content,
+  .about-essence .section-content {
+    column-count: 2;
+    column-gap: var(--spacing-xl);
+  }
+
+}

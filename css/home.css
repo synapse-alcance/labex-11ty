@@ -41,6 +41,7 @@
 
 .hero-content {
   position: relative;
+  max-width: var(--container-max-width);
   align-self: flex-end;
   z-index: 3;
   text-align: center;
@@ -72,6 +73,10 @@
 
 .examinations img {
   display: block;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: var(--spacing-md);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius-md);
@@ -132,6 +137,12 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: var(--gap-md);
+}
+
+.differentiators-cards {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .differentiators-card-icon {
@@ -266,4 +277,93 @@
   font-size: 0.8em;
   font-weight: 200;
   color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+    min-height: 560px;
+  }
+
+  .hero-content {
+    align-self: center;
+    text-align: left;
+    max-width: 640px;
+  }
+
+  .results-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .examinations .section-content {
+    display: flex;
+    gap: var(--spacing-xl);
+  }
+
+  .examinations .column-1 {
+    flex: 0 0 60%;
+  }
+
+  .examinations .column-1 img {
+    margin: 0;
+    display: block;
+    min-width: 90%;
+  }
+
+  .plans .section-content {
+    max-width: 1000px;
+  }
+
+  .plans-slide {
+    height: 56px;
+    margin-right: 64px;
+  }
+
+  .differentiators-cards {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+  }
+
+  .differentiators-cards .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.card + .card {
+    margin-top: 0;
+  }
+
+  .testimonials-quotes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+
+  .testimonials-quote {
+    margin: 0;
+  }
+
+  .section-cta {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plans-track {
+    animation: none;
+  }
 }

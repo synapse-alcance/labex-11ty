@@ -1,6 +1,7 @@
 .examinations-cover {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   padding-top: var(--header-height-mobile);
   position: relative;
   height: 100vh;
@@ -15,6 +16,7 @@
 
 .examinations-cover-content {
   position: relative;
+  max-width: var(--container-max-width);
   align-self: flex-end;
   z-index: 3;
   text-align: center;
@@ -93,4 +95,73 @@
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .examinations-cover {
+    height: 70vh;
+    min-height: 520px;
+    padding-top: var(--header-height-desktop);
+    background-position: center;
+  }
+
+  .examinations-cover-content {
+    align-self: center;
+    text-align: left;
+    max-width: 640px;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .dropdown-label {
+    padding-top: var(--spacing-lg);
+  }
+
+  .dropdown-values {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .group {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .group h2 {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .exam {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .exam h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .exam p {
+    max-width: var(--container-max-width);
+    line-height: var(--line-height-normal);
+  }
+
+  .exam-link {
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+    display: inline-block;
+  }
+
+  .group-columns {
+    column-count: 2;
+    column-gap: var(--spacing-xl);
+  }
+
+  .exam {
+    break-inside: avoid;
+  }
+
 }

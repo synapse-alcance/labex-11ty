@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background: var(--color-primary);
   box-shadow: var(--shadow-medium);
   z-index: 1000;
@@ -97,33 +97,107 @@
   pointer-events: auto;
 }
 
-/* @media (min-width: var(--viewport-min-width-desktop)) {
+@media (prefers-reduced-motion: reduce) {
+  .header-nav a {
+    transition: none;
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header-content {
+    height: var(--header-height-desktop);
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
   .header-toggle {
     display: none;
   }
 
   .header-nav {
-    background: transparent;
     position: static;
-    padding: 0;
+    transform: none;
     height: auto;
     width: auto;
-    max-width: 100%;
+    max-width: none;
+    padding: 0;
+    background: transparent;
     box-shadow: none;
-    transform: none;
+  }
+
+  .header-nav a {
+    font-weight: 400;
+    font-size: var(--font-size-lg);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+    padding: var(--spacing-xs);
+    opacity: 0.85;
+    transform: scale(var(--scale-md));
+    transition:
+      opacity var(--duration-normal) var(--ease-soft),
+      transform var(--duration-normal) var(--ease-soft),
+      color var(--duration-fast) var(--ease-out);
+  }
+
+  .header-nav a:hover,
+  .header-nav a:focus-visible {
+    opacity: 1;
+    transform: scale(var(--scale-lg));
+  }
+
+  .header-nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    opacity: 0.4;
+    transform: translateX(-50%);
+    transition:
+      width var(--duration-fast) var(--ease-out),
+      opacity var(--duration-fast) var(--ease-out);
+  }
+
+  .header-nav a:hover::after,
+  .header-nav a:focus-visible::after {
+    width: 100%;
+    opacity: 0.8;
   }
 
   .header-nav ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: var(--spacing-xxs);
   }
 
   .header-nav li {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  .header-nav li:first-child {
+    display: none;
+  }
+
+  .header-nav a {
+    font-size: var(--font-size-md);
+    padding: var(--spacing-xs) var(--spacing-xs);
+  }
+
+  .header-nav li img {
+    display: none;
   }
 
   .header-backdrop {
     display: none;
   }
-} */
+}

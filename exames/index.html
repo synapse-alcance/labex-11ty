@@ -31,15 +31,15 @@
   <div class="header-content">
 
     <div class="header-logo">
-      <img src="/labex-11ty/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
-    </div>
+      <a href="/labex-11ty/" target="_self"><img src="/labex-11ty/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
+    </div></a>
 
     <button class="header-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Menu</span>
       ☰
     </button>
 
-    <nav class="header-nav">
+    <nav id="site-nav" class="header-nav">
       <ul>
         
         <li>
@@ -55,20 +55,16 @@
         </li>
         
         <li>
-          <a href="/labex-11ty/equipe" target="_self">Equipe</a>
-        </li>
-        
-        <li>
           <a href="/labex-11ty/sobre" target="_self">Sobre</a>
         </li>
         
         
         <li>
-          <a href="#" target="_blank" aria-label="Agendamento (link externo)">Agendamento <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
+          <a href="https://wa.me/5522988240354" target="_blank" aria-label="Agendamento (link externo)"> Agendamento <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         
         <li>
-          <a href="#" target="_blank" aria-label="Resultados (link externo)">Resultados <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
+          <a href="http://pacs.labeximagem.com/" target="_blank" aria-label="Resultados (link externo)"> Resultados <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         
       </ul>
@@ -80,11 +76,13 @@
 		<main>
 			
 
-<section class="examinations-cover">
-  <div class="examinations-cover-content">
-    <h1>Exames com tecnologia e cuidado</h1>
-    <p>Saiba como funciona cada exame e prepare-se com tranquilidade.</p>
-    <a href="#" class="btn btn-primary">Agende agora</a>
+<section class="examinations">
+  <div class="examinations-cover">
+    <div class="examinations-cover-content">
+      <h1>Exames com tecnologia e cuidado</h1>
+      <p>Saiba como funciona cada exame e prepare-se com tranquilidade.</p>
+      <a href="https://wa.me/5522988240354" target="_blank" class="btn btn-primary">Agende agora</a>
+    </div>
   </div>
 </section>
 
@@ -115,160 +113,168 @@
         
         <div class="group" data-group="ressonancias">
           <h2>Ressonâncias</h2>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância de alto campo com Inteligência Artificial</h3>
-            <p>Exame realizado em equipamento de última geração, que utiliza inteligência artificial para aprimorar a qualidade das imagens e oferecer diagnósticos mais precisos, com maior rapidez e conforto para o paciente.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          <div class="group-columns">
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância de alto campo com Inteligência Artificial</h3>
+              <p>Exame realizado em equipamento de última geração, que utiliza inteligência artificial para aprimorar a qualidade das imagens e oferecer diagnósticos mais precisos, com maior rapidez e conforto para o paciente.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância com preparo intestinal para endometriose</h3>
+              <p>Indicado para avaliação detalhada da endometriose, este exame utiliza preparo intestinal específico para melhorar a visualização das estruturas pélvicas e fornecer informações essenciais para o tratamento.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância de corpo inteiro</h3>
+              <p>Permite uma análise abrangente de todo o organismo em um único exame, auxiliando na detecção precoce de alterações e oferecendo uma visão global da saúde do paciente.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância com contraste hepatócito-específico</h3>
+              <p>Exame direcionado ao fígado, que utiliza contraste especial para avaliar de forma mais precisa lesões hepáticas e diferenciar alterações benignas de malignas.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância com quantificação de ferro e gordura hepática</h3>
+              <p>Avalia o acúmulo de ferro e gordura no fígado, fornecendo dados importantes para o acompanhamento de doenças hepáticas como esteatose e hemocromatose.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância de crânio com tractografia/espectroscopia</h3>
+              <p>Exame avançado que, além da imagem convencional do crânio, permite mapear conexões das fibras nervosas (tractografia) e analisar a composição química dos tecidos cerebrais (espectroscopia), contribuindo para diagnósticos neurológicos mais completos.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ressonância cardíaca</h3>
+              <p>Exame não invasivo que avalia a estrutura e o funcionamento do coração, permitindo identificar alterações anatômicas, funcionais e de perfusão miocárdica com alta precisão.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up exam-last">
+              <h3>Enterorressonância</h3>
+              <p>Indicado para estudo detalhado do intestino delgado, este exame utiliza contraste e técnicas específicas para identificar inflamações, estenoses e outras alterações relacionadas a doenças intestinais, como a doença de Crohn.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
           </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância com preparo intestinal para endometriose</h3>
-            <p>Indicado para avaliação detalhada da endometriose, este exame utiliza preparo intestinal específico para melhorar a visualização das estruturas pélvicas e fornecer informações essenciais para o tratamento.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância de corpo inteiro</h3>
-            <p>Permite uma análise abrangente de todo o organismo em um único exame, auxiliando na detecção precoce de alterações e oferecendo uma visão global da saúde do paciente.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância com contraste hepatócito-específico</h3>
-            <p>Exame direcionado ao fígado, que utiliza contraste especial para avaliar de forma mais precisa lesões hepáticas e diferenciar alterações benignas de malignas.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância com quantificação de ferro e gordura hepática</h3>
-            <p>Avalia o acúmulo de ferro e gordura no fígado, fornecendo dados importantes para o acompanhamento de doenças hepáticas como esteatose e hemocromatose.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância de crânio com tractografia/espectroscopia</h3>
-            <p>Exame avançado que, além da imagem convencional do crânio, permite mapear conexões das fibras nervosas (tractografia) e analisar a composição química dos tecidos cerebrais (espectroscopia), contribuindo para diagnósticos neurológicos mais completos.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ressonância cardíaca</h3>
-            <p>Exame não invasivo que avalia a estrutura e o funcionamento do coração, permitindo identificar alterações anatômicas, funcionais e de perfusão miocárdica com alta precisão.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up exam-last">
-            <h3>Enterorressonância</h3>
-            <p>Indicado para estudo detalhado do intestino delgado, este exame utiliza contraste e técnicas específicas para identificar inflamações, estenoses e outras alterações relacionadas a doenças intestinais, como a doença de Crohn.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
         </div>
         
         <div class="group" data-group="tomografias">
           <h2>Tomografias</h2>
-          
-          <div class="exam fade-up ">
-            <h3>Tomografia multislice 128 canais</h3>
-            <p>Exame de alta resolução realizado em equipamento moderno, capaz de gerar imagens detalhadas em poucos segundos. Permite avaliar diferentes regiões do corpo com precisão, reduzindo o tempo de exposição e aumentando o conforto do paciente.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          <div class="group-columns">
+            
+            <div class="exam fade-up ">
+              <h3>Tomografia multislice 128 canais</h3>
+              <p>Exame de alta resolução realizado em equipamento moderno, capaz de gerar imagens detalhadas em poucos segundos. Permite avaliar diferentes regiões do corpo com precisão, reduzindo o tempo de exposição e aumentando o conforto do paciente.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Angiotomografia de coronárias</h3>
+              <p>Exame não invasivo que utiliza tomografia para visualizar as artérias coronárias. Indicado para investigar obstruções, placas de gordura ou outras alterações que possam comprometer a circulação sanguínea no coração.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Tomografia para score de cálcio</h3>
+              <p>Avalia a presença e a quantidade de cálcio nas artérias coronárias. É um exame rápido e seguro, utilizado para estimar o risco de doenças cardíacas e auxiliar na prevenção de eventos cardiovasculares.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up exam-last">
+              <h3>Tomografia com perfusão</h3>
+              <p>Exame avançado que analisa o fluxo sanguíneo em órgãos ou tecidos específicos. Permite identificar áreas com redução de irrigação, sendo útil no diagnóstico de doenças neurológicas, cardíacas e oncológicas.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
           </div>
-          
-          <div class="exam fade-up ">
-            <h3>Angiotomografia de coronárias</h3>
-            <p>Exame não invasivo que utiliza tomografia para visualizar as artérias coronárias. Indicado para investigar obstruções, placas de gordura ou outras alterações que possam comprometer a circulação sanguínea no coração.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Tomografia para score de cálcio</h3>
-            <p>Avalia a presença e a quantidade de cálcio nas artérias coronárias. É um exame rápido e seguro, utilizado para estimar o risco de doenças cardíacas e auxiliar na prevenção de eventos cardiovasculares.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up exam-last">
-            <h3>Tomografia com perfusão</h3>
-            <p>Exame avançado que analisa o fluxo sanguíneo em órgãos ou tecidos específicos. Permite identificar áreas com redução de irrigação, sendo útil no diagnóstico de doenças neurológicas, cardíacas e oncológicas.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
         </div>
         
         <div class="group" data-group="ultrassonografias">
           <h2>Ultrassonografias</h2>
-          
-          <div class="exam fade-up ">
-            <h3>Ultrassonografia geral</h3>
-            <p>Exame não invasivo que utiliza ondas sonoras para gerar imagens em tempo real de diferentes órgãos e estruturas internas. É indicado para avaliação de abdômen, rins, tireoide, articulações e outras regiões, permitindo diagnósticos rápidos e seguros sem exposição à radiação.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          <div class="group-columns">
+            
+            <div class="exam fade-up ">
+              <h3>Ultrassonografia geral</h3>
+              <p>Exame não invasivo que utiliza ondas sonoras para gerar imagens em tempo real de diferentes órgãos e estruturas internas. É indicado para avaliação de abdômen, rins, tireoide, articulações e outras regiões, permitindo diagnósticos rápidos e seguros sem exposição à radiação.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ultrassonografia obstétrica 3D/4D</h3>
+              <p>Exame realizado durante a gestação que possibilita visualizar o bebê em três dimensões e até acompanhar seus movimentos em tempo real. Além de auxiliar na avaliação do desenvolvimento fetal, proporciona uma experiência emocionante e de proximidade para os pais.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up exam-last">
+              <h3>Doppler vascular</h3>
+              <p>Exame que analisa o fluxo sanguíneo nas artérias e veias, identificando possíveis obstruções, estreitamentos ou alterações na circulação. É fundamental para investigar doenças vasculares e acompanhar tratamentos de forma precisa e segura.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
           </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ultrassonografia obstétrica 3D/4D</h3>
-            <p>Exame realizado durante a gestação que possibilita visualizar o bebê em três dimensões e até acompanhar seus movimentos em tempo real. Além de auxiliar na avaliação do desenvolvimento fetal, proporciona uma experiência emocionante e de proximidade para os pais.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up exam-last">
-            <h3>Doppler vascular</h3>
-            <p>Exame que analisa o fluxo sanguíneo nas artérias e veias, identificando possíveis obstruções, estreitamentos ou alterações na circulação. É fundamental para investigar doenças vasculares e acompanhar tratamentos de forma precisa e segura.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
         </div>
         
         <div class="group" data-group="demais">
           <h2>Demais exames</h2>
-          
-          <div class="exam fade-up ">
-            <h3>Radiografia digital</h3>
-            <p>Exame rápido e seguro que utiliza radiação em baixa dose para gerar imagens de ossos e estruturas internas. A tecnologia digital permite maior nitidez e agilidade na entrega dos resultados.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
+          <div class="group-columns">
+            
+            <div class="exam fade-up ">
+              <h3>Radiografia digital</h3>
+              <p>Exame rápido e seguro que utiliza radiação em baixa dose para gerar imagens de ossos e estruturas internas. A tecnologia digital permite maior nitidez e agilidade na entrega dos resultados.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Mamografia digital</h3>
+              <p>Exame de rastreamento essencial para a saúde da mulher, indicado na prevenção e diagnóstico precoce do câncer de mama. A versão digital oferece imagens mais detalhadas e maior conforto durante a realização.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Densitometria óssea</h3>
+              <p>Avalia a densidade mineral dos ossos, sendo fundamental para detectar osteoporose e acompanhar a saúde óssea ao longo do tempo. É um exame simples, rápido e indolor.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Ecocardiograma com Doppler</h3>
+              <p>Exame que utiliza ultrassom para avaliar a anatomia e o funcionamento do coração. Com o recurso Doppler, também analisa o fluxo sanguíneo, permitindo diagnósticos precisos de alterações cardíacas.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Eletrocardiograma</h3>
+              <p>Registra a atividade elétrica do coração por meio de eletrodos fixados na pele. É um exame rápido e indolor, indicado para investigar arritmias e outras alterações cardíacas.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Teste ergométrico</h3>
+              <p>Também conhecido como teste de esforço, avalia o desempenho do coração durante atividade física controlada. É utilizado para investigar sintomas como dor no peito e falta de ar, além de auxiliar na prevenção de doenças cardíacas.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up ">
+              <h3>Holter</h3>
+              <p>Monitoramento contínuo da atividade elétrica do coração por 24 horas ou mais. Permite identificar arritmias e alterações que não aparecem em exames de curta duração, oferecendo uma visão mais completa da saúde cardíaca.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
+            <div class="exam fade-up exam-last">
+              <h3>M.A.P.A. (Monitorização Ambulatorial da Pressão Arterial)</h3>
+              <p>Exame que mede a pressão arterial de forma contínua ao longo de 24 horas, durante as atividades cotidianas do paciente. É fundamental para avaliar hipertensão e acompanhar a eficácia de tratamentos.</p>
+              <a class="exam-link" href="/labex-11ty/pdf/instructions-placeholder.pdf" target="_blank">Instruções de preparo 📄</a>
+            </div>
+            
           </div>
-          
-          <div class="exam fade-up ">
-            <h3>Mamografia digital</h3>
-            <p>Exame de rastreamento essencial para a saúde da mulher, indicado na prevenção e diagnóstico precoce do câncer de mama. A versão digital oferece imagens mais detalhadas e maior conforto durante a realização.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Densitometria óssea</h3>
-            <p>Avalia a densidade mineral dos ossos, sendo fundamental para detectar osteoporose e acompanhar a saúde óssea ao longo do tempo. É um exame simples, rápido e indolor.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Ecocardiograma com Doppler</h3>
-            <p>Exame que utiliza ultrassom para avaliar a anatomia e o funcionamento do coração. Com o recurso Doppler, também analisa o fluxo sanguíneo, permitindo diagnósticos precisos de alterações cardíacas.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Eletrocardiograma</h3>
-            <p>Registra a atividade elétrica do coração por meio de eletrodos fixados na pele. É um exame rápido e indolor, indicado para investigar arritmias e outras alterações cardíacas.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Teste ergométrico</h3>
-            <p>Também conhecido como teste de esforço, avalia o desempenho do coração durante atividade física controlada. É utilizado para investigar sintomas como dor no peito e falta de ar, além de auxiliar na prevenção de doenças cardíacas.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up ">
-            <h3>Holter</h3>
-            <p>Monitoramento contínuo da atividade elétrica do coração por 24 horas ou mais. Permite identificar arritmias e alterações que não aparecem em exames de curta duração, oferecendo uma visão mais completa da saúde cardíaca.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
-          <div class="exam fade-up exam-last">
-            <h3>M.A.P.A. (Monitorização Ambulatorial da Pressão Arterial)</h3>
-            <p>Exame que mede a pressão arterial de forma contínua ao longo de 24 horas, durante as atividades cotidianas do paciente. É fundamental para avaliar hipertensão e acompanhar a eficácia de tratamentos.</p>
-            <a class="exam-link" href="#">Instruções de preparo 📄</a>
-          </div>
-          
         </div>
         
       </div>
@@ -282,30 +288,14 @@
         <h1>Resultados</h1>
       </div>
       <div class="section-content">
-        <p>Possui uma etiqueta com login e senha para acesso aos resultados de exames?</p>
-        <div class="results-sticker">
-          <div class="results-sticker-content">
-            <div class="results-sticker-header">
-              <img src="/labex-11ty/img/logo-sticker.svg" alt="Logo da Labex.">
-              <p>ACESSE SEU LAUDO E IMAGENS DO EXAME</p>
-            </div>
-            <div class="results-sticker-info">
-              <div class="results-sticker-text">
-                Nome: FULANO DE TAL<br/>
-                Acesse: www.labeximagem.com<br/>
-                Clique em Resultados de Exames<br/>
-                Login: xNNNNNN<br/>
-                Senha: DDMMAAAA<br/>
-              </div>
-              <div class="results-sticker-qrcode">
-                <img src="/labex-11ty/img/qr-code.png" alt="QR-Code para o site da Labex.">
-              </div>
-            </div>
+        <p>Confira na sua guia de exame as informações para acesso aos resultados dos exames realizados conforme ilustrado na imagem a seguir.</p>
+        <div class="results-form">
+          <img src="/labex-11ty/img/detalhe-guia-exame.webp" alt="QR-Code para o site da Labex.">
           </div>
         </div>
         <p>Clique no botão abaixo para acessar os seus resultados.</p>
         <div class="section-cta">
-          <a class="btn btn-primary" href="http://pacs.labeximagem.com/">Resultados de Exames</a>
+          <a class="btn btn-primary" target="_blank" href="http://pacs.labeximagem.com/">Resultados de Exames</a>
         </div>
       </div>
     </div>
@@ -326,7 +316,7 @@
           <img src="/labex-11ty/icon/whatsapp-brands-solid-full.svg" alt="Ícone do Whatsapp.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://wa.me/5522988240354">Whatsapp</a>
+          <a href="https://wa.me/5522988240354" target="_blank">Whatsapp</a>
         </div>
       </div>
       
@@ -335,7 +325,7 @@
           <img src="/labex-11ty/icon/instagram-brands-solid-full.svg" alt="Ícone do Instagram.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.instagram.com/labeximagem">Instagram</a>
+          <a href="https://www.instagram.com/labeximagem" target="_blank">Instagram</a>
         </div>
       </div>
       
@@ -344,7 +334,7 @@
           <img src="/labex-11ty/icon/square-facebook-brands-solid-full.svg" alt="Ícone do Facebook.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.facebook.com/labeximagem">Facebook</a>
+          <a href="https://www.facebook.com/labeximagem" target="_blank">Facebook</a>
         </div>
       </div>
       
@@ -353,7 +343,7 @@
           <img src="/labex-11ty/icon/x-twitter-brands-solid-full.svg" alt="Ícone do X (antigo Twitter).">
         </div>
         <div class="footer-contact-link">
-          <a href="https://x.com/labeximagem">X (Twitter)</a>
+          <a href="https://x.com/labeximagem" target="_blank">X (Twitter)</a>
         </div>
       </div>
       
@@ -362,7 +352,7 @@
           <img src="/labex-11ty/icon/square-linkedin-brands-solid-full.svg" alt="Ícone do Linkedin.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.linkedin.com/company/labeximagem/">Linkedin</a>
+          <a href="https://www.linkedin.com/company/labeximagem/" target="_blank">Linkedin</a>
         </div>
       </div>
       
@@ -371,7 +361,7 @@
           <img src="/labex-11ty/icon/envelope-open-solid-full.svg" alt="Ícone de envelope.">
         </div>
         <div class="footer-contact-link">
-          <a href="mailto:atendimento@labeximagem.com">atendimento@labeximagem.com</a>
+          <a href="mailto:atendimento@labeximagem.com" target="_blank">atendimento@labeximagem.com</a>
         </div>
       </div>
       
@@ -380,7 +370,7 @@
           <img src="/labex-11ty/icon/phone-solid-full.svg" alt="Ícone de telefone.">
         </div>
         <div class="footer-contact-link">
-          <a href="tel:+55-22-2772-4257">(22) 2772-4257</a>
+          <a href="tel:+55-22-2772-4257" target="_blank">(22) 2772-4257</a>
         </div>
       </div>
       
@@ -389,7 +379,7 @@
           <img src="/labex-11ty/icon/phone-solid-full.svg" alt="Ícone de telefone.">
         </div>
         <div class="footer-contact-link">
-          <a href="tel:+55-22-2757-6300">(22) 2757-6300</a>
+          <a href="tel:+55-22-2757-6300" target="_blank">(22) 2757-6300</a>
         </div>
       </div>
       
@@ -398,7 +388,7 @@
           <img src="/labex-11ty/icon/map-location-dot-solid-full.svg" alt="Ícone de mapa com pino de localização.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://maps.app.goo.gl/2nqLJPCCUr1bsov69">R. Conde de Araruama, 440, Centro<br/>Macaé - RJ, 27910-640</a>
+          <a href="https://maps.app.goo.gl/2nqLJPCCUr1bsov69" target="_blank">R. Conde de Araruama, 440, Centro<br/>Macaé - RJ, 27910-640</a>
         </div>
       </div>
       

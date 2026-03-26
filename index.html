@@ -33,15 +33,15 @@
   <div class="header-content">
 
     <div class="header-logo">
-      <img src="/labex-11ty/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
-    </div>
+      <a href="/labex-11ty/" target="_self"><img src="/labex-11ty/img/logo-white-nomargin.svg" alt="Labex Medicina Diagnóstica">
+    </div></a>
 
     <button class="header-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Menu</span>
       ☰
     </button>
 
-    <nav class="header-nav">
+    <nav id="site-nav" class="header-nav">
       <ul>
         
         <li>
@@ -57,20 +57,16 @@
         </li>
         
         <li>
-          <a href="/labex-11ty/equipe" target="_self">Equipe</a>
-        </li>
-        
-        <li>
           <a href="/labex-11ty/sobre" target="_self">Sobre</a>
         </li>
         
         
         <li>
-          <a href="#" target="_blank" aria-label="Agendamento (link externo)">Agendamento <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
+          <a href="https://wa.me/5522988240354" target="_blank" aria-label="Agendamento (link externo)"> Agendamento <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         
         <li>
-          <a href="#" target="_blank" aria-label="Resultados (link externo)">Resultados <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
+          <a href="http://pacs.labeximagem.com/" target="_blank" aria-label="Resultados (link externo)"> Resultados <img src="/labex-11ty/icon/up-right-from-square-solid-full.svg" alt="Link externo."></a>
         </li>
         
       </ul>
@@ -83,14 +79,23 @@
 			
 
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="/labex-11ty/vid/labex-intro-video.mp4" type="video/mp4">
+    <video id="hero-video" class="hero-video" poster="/labex-11ty/img/hero-intro-fallback.webp" autoplay muted loop playsinline>
     </video>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const video = document.getElementById("hero-video");
+        const source = document.createElement("source");
+        source.src = "/labex-11ty/vid/labex-intro-video.webm";
+        source.type = "video/webm";
+        video.appendChild(source);
+        video.load();
+      });
+    </script>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Tecnologia avançada, cuidado que acolhe</h1>
       <p>Equipamentos de última geração e uma equipe preparada para receber você.</p>
-      <a href="https://wa.me/5522988240354" class="btn btn-primary">Agendar</a>
+      <a href="https://wa.me/5522988240354" target="_blank" class="btn btn-primary">Agendar</a>
     </div>
   </section>
 
@@ -100,30 +105,14 @@
         <h1>Resultados</h1>
       </div>
       <div class="section-content">
-        <p>Possui uma etiqueta com login e senha para acesso aos resultados de exames?</p>
-        <div class="results-sticker">
-          <div class="results-sticker-content">
-            <div class="results-sticker-header">
-              <img src="/labex-11ty/img/logo-sticker.svg" alt="Logo da Labex.">
-              <p>ACESSE SEU LAUDO E IMAGENS DO EXAME</p>
-            </div>
-            <div class="results-sticker-info">
-              <div class="results-sticker-text">
-                Nome: FULANO DE TAL<br/>
-                Acesse: www.labeximagem.com<br/>
-                Clique em Resultados de Exames<br/>
-                Login: xNNNNNN<br/>
-                Senha: DDMMAAAA<br/>
-              </div>
-              <div class="results-sticker-qrcode">
-                <img src="/labex-11ty/img/qr-code.png" alt="QR-Code para o site da Labex.">
-              </div>
-            </div>
+        <p>Confira na sua guia de exame as informações para acesso aos resultados dos exames realizados conforme ilustrado na imagem a seguir.</p>
+        <div class="results-form">
+          <img src="/labex-11ty/img/detalhe-guia-exame.webp" alt="QR-Code para o site da Labex.">
           </div>
         </div>
         <p>Clique no botão abaixo para acessar os seus resultados.</p>
         <div class="section-cta">
-          <a class="btn btn-primary" href="http://pacs.labeximagem.com/">Resultados de Exames</a>
+          <a class="btn btn-primary" target="_blank" href="http://pacs.labeximagem.com/">Resultados de Exames</a>
         </div>
       </div>
     </div>
@@ -136,101 +125,125 @@
       </div>
       
       <div class="section-content">
-        <h2>Ressonâncias magnéticas</h2>
-        
-        <p>A ressonância magnética é um dos pilares da Labex, realizada com equipamentos de alto campo e recursos avançados de inteligência artificial que elevam a precisão diagnóstica. Aqui, o foco é oferecer imagens de altíssima definição com máximo conforto ao paciente, incluindo protocolos especializados para endometriose, estudos cardíacos, avaliação hepática e exames de corpo inteiro. Cada exame é conduzido por uma equipe experiente, preparada para acolher o paciente e explicar cada etapa.</p>
-        
-        <img src="/labex-11ty/img/ressonancia-magnetica.webp" alt="Equipamento Magneton Altea da linha Siemens Healthineers em utilização.">
-        <h3>Exames disponíveis:</h3>
-        <ul>
-          
-          <li>Ressonância de alto campo com Inteligência Artificial</li>
-          
-          <li>Ressonância com preparo intestinal para endometriose</li>
-          
-          <li>Ressonância de corpo inteiro</li>
-          
-          <li>Ressonância com contraste hepatócito-específico</li>
-          
-          <li>Ressonância com quantificação de ferro e gordura hepática</li>
-          
-          <li>Ressonância de crânio com tractografia/espectroscopia</li>
-          
-          <li>Ressonância cardíaca</li>
-          
-          <li>Enterorressonância</li>
-          
-        </ul>
+        <div class="column-1">
+          <div>
+            <h2>Ressonâncias magnéticas</h2>
+            
+            <p>A ressonância magnética é um dos pilares da Labex, realizada com equipamentos de alto campo e recursos avançados de inteligência artificial que elevam a precisão diagnóstica. Aqui, o foco é oferecer imagens de altíssima definição com máximo conforto ao paciente, incluindo protocolos especializados para endometriose, estudos cardíacos, avaliação hepática e exames de corpo inteiro. Cada exame é conduzido por uma equipe experiente, preparada para acolher o paciente e explicar cada etapa.</p>
+            
+          </div>
+          <img src="/labex-11ty/img/ressonancia-magnetica.webp" alt="Equipamento Magneton Altea da linha Siemens Healthineers em utilização.">
+        </div>
+        <div class="column-2">
+          <h3>Exames disponíveis:</h3>
+          <ul>
+            
+            <li>Ressonância de alto campo com Inteligência Artificial</li>
+            
+            <li>Ressonância com preparo intestinal para endometriose</li>
+            
+            <li>Ressonância de corpo inteiro</li>
+            
+            <li>Ressonância com contraste hepatócito-específico</li>
+            
+            <li>Ressonância com quantificação de ferro e gordura hepática</li>
+            
+            <li>Ressonância de crânio com tractografia/espectroscopia</li>
+            
+            <li>Ressonância cardíaca</li>
+            
+            <li>Enterorressonância</li>
+            
+          </ul>
+        </div>
       </div>
       
       <div class="section-content">
-        <h2>Tomografias computadorizadas</h2>
-        
-        <p>A Labex conta com tecnologia multislice de 128 canais, capaz de produzir imagens rápidas, detalhadas e com menor exposição à radiação. Os protocolos incluem desde tomografias gerais até exames avançados, como angiotomografia de coronárias, score de cálcio e estudos de perfusão. O objetivo é proporcionar diagnósticos precisos em poucos minutos, com processos otimizados e atendimento humanizado.</p>
-        
-        <img src="/labex-11ty/img/tomografia-computadorizada.webp" alt="Extrato de um resultado de tomografia com diversos cortes transversais do abdômen do paciente.">
-        <h3>Exames disponíveis:</h3>
-        <ul>
-          
-          <li>Tomografia multislice 128 canais</li>
-          
-          <li>Angiotomografia de coronárias</li>
-          
-          <li>Tomografia para score de cálcio</li>
-          
-          <li>Tomografia com perfusão</li>
-          
-        </ul>
+        <div class="column-1">
+          <div>
+            <h2>Tomografias computadorizadas</h2>
+            
+            <p>A Labex conta com tecnologia multislice de 128 canais, capaz de produzir imagens rápidas, detalhadas e com menor exposição à radiação. Os protocolos incluem desde tomografias gerais até exames avançados, como angiotomografia de coronárias, score de cálcio e estudos de perfusão. O objetivo é proporcionar diagnósticos precisos em poucos minutos, com processos otimizados e atendimento humanizado.</p>
+            
+          </div>
+          <img src="/labex-11ty/img/tomografia-computadorizada.webp" alt="Extrato de um resultado de tomografia com diversos cortes transversais do abdômen do paciente.">
+        </div>
+        <div class="column-2">
+          <h3>Exames disponíveis:</h3>
+          <ul>
+            
+            <li>Tomografia multislice 128 canais</li>
+            
+            <li>Angiotomografia de coronárias</li>
+            
+            <li>Tomografia para score de cálcio</li>
+            
+            <li>Tomografia com perfusão</li>
+            
+          </ul>
+        </div>
       </div>
       
       <div class="section-content">
-        <h2>Ultrassonografias</h2>
-        
-        <p>Os exames de ultrassom da Labex abrangem desde avaliações gerais até estudos obstétricos em 3D/4D, permitindo visualizar detalhes com clareza e emoção. A clínica também oferece exames vasculares com Doppler, essenciais para o acompanhamento da saúde circulatória. Com profissionais experientes e equipamentos modernos, o ultrassom se torna uma experiência acolhedora, segura e informativa.</p>
-        
-        <img src="/labex-11ty/img/ultrassonografia-3d.webp" alt="Foto de topo de uma mulher grávia apoiando a imagem de ultrassom 3D do seu feto em cima da barriga.">
-        <h3>Exames disponíveis:</h3>
-        <ul>
-          
-          <li>Ultrassonografia geral</li>
-          
-          <li>Ultrassonografia obstétrica 3D/4D</li>
-          
-          <li>Doppler vascular</li>
-          
-        </ul>
+        <div class="column-1">
+          <div>
+            <h2>Ultrassonografias</h2>
+            
+            <p>Os exames de ultrassom da Labex abrangem desde avaliações gerais até estudos obstétricos em 3D/4D, permitindo visualizar detalhes com clareza e emoção. A clínica também oferece exames vasculares com Doppler, essenciais para o acompanhamento da saúde circulatória. Com profissionais experientes e equipamentos modernos, o ultrassom se torna uma experiência acolhedora, segura e informativa.</p>
+            
+          </div>
+          <img src="/labex-11ty/img/ultrassonografia-3d.webp" alt="Foto de topo de uma mulher grávia apoiando a imagem de ultrassom 3D do seu feto em cima da barriga.">
+        </div>
+        <div class="column-2">
+          <h3>Exames disponíveis:</h3>
+          <ul>
+            
+            <li>Ultrassonografia geral</li>
+            
+            <li>Ultrassonografia obstétrica 3D/4D</li>
+            
+            <li>Doppler vascular</li>
+            
+          </ul>
+        </div>
       </div>
       
       <div class="section-content">
-        <h2>Demais exames diagnósticos</h2>
-        
-        <p>Além das ressonâncias, tomografias e ultrassonografias, a Labex oferece um conjunto completo de exames complementares que apoiam o diagnóstico e o acompanhamento clínico. Entre eles estão radiografia digital, mamografia, densitometria óssea, eletrocardiograma, ecocardiograma, teste ergométrico, Holter e M.A.P.A. Esses exames são realizados com precisão técnica e atenção ao bem-estar do paciente, reforçando o compromisso da clínica com um cuidado integral e acessível.</p>
-        
-        <img src="/labex-11ty/img/mamografia.webp" alt="Médica realizando exame de tomografia com paciente apoiada no equipamento ao fundo.">
-        <h3>Exames disponíveis:</h3>
-        <ul>
-          
-          <li>Radiografia digital</li>
-          
-          <li>Mamografia digital</li>
-          
-          <li>Densitometria óssea</li>
-          
-          <li>Ecocardiograma com doppler</li>
-          
-          <li>Eletrocardiograma</li>
-          
-          <li>Teste ergométrico</li>
-          
-          <li>Holter</li>
-          
-          <li>M.A.P.A.</li>
-          
-        </ul>
+        <div class="column-1">
+          <div>
+            <h2>Demais exames diagnósticos</h2>
+            
+            <p>Além das ressonâncias, tomografias e ultrassonografias, a Labex oferece um conjunto completo de exames complementares que apoiam o diagnóstico e o acompanhamento clínico. Entre eles estão radiografia digital, mamografia, densitometria óssea, eletrocardiograma, ecocardiograma, teste ergométrico, Holter e M.A.P.A. Esses exames são realizados com precisão técnica e atenção ao bem-estar do paciente, reforçando o compromisso da clínica com um cuidado integral e acessível.</p>
+            
+          </div>
+          <img src="/labex-11ty/img/mamografia.webp" alt="Médica realizando exame de tomografia com paciente apoiada no equipamento ao fundo.">
+        </div>
+        <div class="column-2">
+          <h3>Exames disponíveis:</h3>
+          <ul>
+            
+            <li>Radiografia digital</li>
+            
+            <li>Mamografia digital</li>
+            
+            <li>Densitometria óssea</li>
+            
+            <li>Ecocardiograma com doppler</li>
+            
+            <li>Eletrocardiograma</li>
+            
+            <li>Teste ergométrico</li>
+            
+            <li>Holter</li>
+            
+            <li>M.A.P.A.</li>
+            
+          </ul>
+        </div>
       </div>
       
       <div class="section-cta">
-        <a class="btn btn-primary" href="#">Detalhes dos exames</a>
+        <a class="btn btn-primary" href="/labex-11ty/exames">Detalhes dos exames</a>
       </div>
     </div>
   </section>
@@ -295,7 +308,7 @@
         
       </div>
       <div class="section-cta">
-        <a class="btn btn-primary" href="#">Todos os convênios</a>
+        <a class="btn btn-primary" href="/labex-11ty/convenios">Todos os convênios</a>
       </div>
     </div>
   </section>
@@ -466,7 +479,7 @@
         </div>
       </div>
       <div class="section-cta">
-        <a class="btn btn-primary" href="https://g.page/r/CTfnFfa_yzd3EAE/review">Deixe seu depoimento</a>
+        <a class="btn btn-primary" target="_blank" href="https://g.page/r/CTfnFfa_yzd3EAE/review">Deixe seu depoimento</a>
       </div>
     </div>
   </section>
@@ -486,7 +499,7 @@
           <img src="/labex-11ty/icon/whatsapp-brands-solid-full.svg" alt="Ícone do Whatsapp.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://wa.me/5522988240354">Whatsapp</a>
+          <a href="https://wa.me/5522988240354" target="_blank">Whatsapp</a>
         </div>
       </div>
       
@@ -495,7 +508,7 @@
           <img src="/labex-11ty/icon/instagram-brands-solid-full.svg" alt="Ícone do Instagram.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.instagram.com/labeximagem">Instagram</a>
+          <a href="https://www.instagram.com/labeximagem" target="_blank">Instagram</a>
         </div>
       </div>
       
@@ -504,7 +517,7 @@
           <img src="/labex-11ty/icon/square-facebook-brands-solid-full.svg" alt="Ícone do Facebook.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.facebook.com/labeximagem">Facebook</a>
+          <a href="https://www.facebook.com/labeximagem" target="_blank">Facebook</a>
         </div>
       </div>
       
@@ -513,7 +526,7 @@
           <img src="/labex-11ty/icon/x-twitter-brands-solid-full.svg" alt="Ícone do X (antigo Twitter).">
         </div>
         <div class="footer-contact-link">
-          <a href="https://x.com/labeximagem">X (Twitter)</a>
+          <a href="https://x.com/labeximagem" target="_blank">X (Twitter)</a>
         </div>
       </div>
       
@@ -522,7 +535,7 @@
           <img src="/labex-11ty/icon/square-linkedin-brands-solid-full.svg" alt="Ícone do Linkedin.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://www.linkedin.com/company/labeximagem/">Linkedin</a>
+          <a href="https://www.linkedin.com/company/labeximagem/" target="_blank">Linkedin</a>
         </div>
       </div>
       
@@ -531,7 +544,7 @@
           <img src="/labex-11ty/icon/envelope-open-solid-full.svg" alt="Ícone de envelope.">
         </div>
         <div class="footer-contact-link">
-          <a href="mailto:atendimento@labeximagem.com">atendimento@labeximagem.com</a>
+          <a href="mailto:atendimento@labeximagem.com" target="_blank">atendimento@labeximagem.com</a>
         </div>
       </div>
       
@@ -540,7 +553,7 @@
           <img src="/labex-11ty/icon/phone-solid-full.svg" alt="Ícone de telefone.">
         </div>
         <div class="footer-contact-link">
-          <a href="tel:+55-22-2772-4257">(22) 2772-4257</a>
+          <a href="tel:+55-22-2772-4257" target="_blank">(22) 2772-4257</a>
         </div>
       </div>
       
@@ -549,7 +562,7 @@
           <img src="/labex-11ty/icon/phone-solid-full.svg" alt="Ícone de telefone.">
         </div>
         <div class="footer-contact-link">
-          <a href="tel:+55-22-2757-6300">(22) 2757-6300</a>
+          <a href="tel:+55-22-2757-6300" target="_blank">(22) 2757-6300</a>
         </div>
       </div>
       
@@ -558,7 +571,7 @@
           <img src="/labex-11ty/icon/map-location-dot-solid-full.svg" alt="Ícone de mapa com pino de localização.">
         </div>
         <div class="footer-contact-link">
-          <a href="https://maps.app.goo.gl/2nqLJPCCUr1bsov69">R. Conde de Araruama, 440, Centro<br/>Macaé - RJ, 27910-640</a>
+          <a href="https://maps.app.goo.gl/2nqLJPCCUr1bsov69" target="_blank">R. Conde de Araruama, 440, Centro<br/>Macaé - RJ, 27910-640</a>
         </div>
       </div>
       

@@ -63,7 +63,7 @@
   --transition-normal: 0.3s ease;
 
   /* Layout */
-  --container-max-width: 1120px;
+  --container-max-width: 680px;
   --header-height-mobile: 64px;
   --header-height-desktop: 80px;
 
@@ -100,11 +100,10 @@
   --transition-base: var(--duration-normal) var(--ease-in-out);
   --transition-fast: var(--duration-fast) var(--ease-out);
   --transition-slow: var(--duration-slow) var(--ease-soft);
-
-  --viewport-min-width-desktop: 768px;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   :root {
+    --container-max-width: min(90%, 1024px);
   }
-} */
+}
