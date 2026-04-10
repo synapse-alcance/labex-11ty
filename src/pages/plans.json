@@ -21,6 +21,10 @@
       "name": "BRASEG"
     },
     {
+      "logo": "/img/logo-caberj.webp",
+      "name": "Caberj Saúde"
+    },
+    {
       "logo": "/img/logo-capesaude.webp",
       "name": "Capesaúde"
     },
@@ -55,6 +59,10 @@
     {
       "logo": "/img/logo-integral.webp",
       "name": "Integral"
+    },
+    {
+      "logo": "/img/logo-mawdy.webp",
+      "name": "MAWDY"
     },
     {
       "logo": "/img/logo-mediservice.webp",
